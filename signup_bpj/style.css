@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
-
 * {
 	padding: 0;
 	margin: 0;
@@ -8,7 +6,6 @@
 
 
 body {
-	/* font-family: 'Mochiy Pop P One', sans-serif; */
 	font-family: sans-serif;
 	width: 100vw;
 	min-height: 100vh;
@@ -17,19 +14,19 @@ body {
 	background-image: url(./bg.jpg);
 	background-size: 100%;
 	display: flex;
-	
 }
 
 .container {
 	background-color: #FBF3E4;
-	/* background-color: rgba(255, 255, 255, 0.8);
-	box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); */
 	border-radius: 10px;
 	display: flex;
+	max-width: 950px;
+	width: 95%;
 	justify-content: flex-start;	
 	align-items: flex-start;
 	position: relative;
 	box-shadow: 0 0 5px;
+	transition: all linear 300ms;
 }
 
 @keyframes move {
@@ -49,11 +46,15 @@ body {
 		left: 0;
 	}
 }
+
+#change-sign-mobile {
+	display: none;
+}
+
 .container .cover {
 	height: 100%;
 	width: 50%;
 	position: absolute;
-	/* float: left; */
 	top: 0;
 	left: 0;
 	right: auto;
@@ -65,13 +66,14 @@ body {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	animation: move-rev ease-in-out 500ms;
+	animation: move-rev ease-out 500ms;
 }
 
 .cover h2 {
 	color: #480032;
 	font-size: 35px;
 	text-align: center;
+	width: auto;
 }
 
 #cover-change {
@@ -147,7 +149,6 @@ body {
 	color: #fff;	
 	position: relative;
 	padding: 0 20px 20px 20px;
-	margin-left: 10px;
 }
 
 svg {
@@ -160,7 +161,8 @@ svg {
 	filter: drop-shadow(0 0 10px #193498);
 }
 
-h1 {
+#sign-in h1,
+#sign-up h1 {
 	text-align: center;
 	padding: 28px;
 	font-size: 35px;
@@ -264,7 +266,7 @@ span {
 	background-color: #333;	
 	color: #fff;
 	text-transform: uppercase;
-	padding: 10px 48px;
+	padding: 10px 35px;
 	width: auto;
 	position: absolute;
 	left: 50%;
@@ -309,22 +311,82 @@ span {
 	transition: ease-in-out 300ms;
 }
 
-@media screen and (max-width: 749px){
-	svg {
-		left: 2px;
-		width: 36px;
-		top: 37px;
-		color: #CCFFBD;
-		filter: drop-shadow(0 0 1px #FFD369);
+@media screen and (max-width: 1023px) {
+	#sign-in h1
+	#sign-up h1 {
+		font-size: 30px !important;
 	}
-	
-	h1 {
-		font-size: 30px;
-		text-align: right;
-		padding-right: 0;
+	.container button {
+		font-size: 20px !important;
+	}
+}
+
+@media screen and (max-width: 800px){	
+	.cover {
+		display: none !important;
 	}
 
+	
+	#sign-in h1,
+	#sign-up h1 {
+		display: none;
+	}
+	
+	.container {
+		height: 550px;
+	}
+	
+	#sign-up,
+	#sign-in {
+		position: absolute;
+		width: 100% ;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 120px;
+	}
+	
 	#sign-up {
-		padding: 0 15px 20px 15px;
+		display: none;
+	}
+
+	#change-sign-mobile {
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 78px;
+		border-radius: 10px 10px 0 0 ;
+	}
+	
+	#change-sign-mobile h1:first-child {
+		border-right: 4px solid #2FDD92;
+		background-color: #FFD369;
+		border-radius: 0 0 10px 0;
+		transition: all linear 300ms;
+	}
+	
+	#change-sign-mobile h1:last-child {
+		border-bottom: none;
+		font-size: 30px;
+		color: #FF0000;
+		transition: all linear 300ms;
+	}
+
+	#change-sign-mobile h1 {
+		border-bottom: 4px solid #2FDD92;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		float: left;
+		font-size: 25px;
+		cursor: pointer;
+		width: 50%;
+		height: 100%;
+		color: #1F1D36;
+		animation: all linear 300ms;
+	}
+	
+	.container button {
+		font-size: 28px !important;
+		width: 90% !important;
 	}
 }

@@ -199,7 +199,6 @@ var cover = document.getElementsByClassName('cover')[0]
 var cover_content = cover.getElementsByTagName('h2')[0]
 var cover_btn = document.getElementById('change')
 var	cover_check = document.getElementById('cover-change')
-console.log(cover_check)
 
 cover_btn.onclick = function() {
 	if(cover_check.checked === true) {
@@ -210,4 +209,51 @@ cover_btn.onclick = function() {
 		cover_content.innerHTML = 'Bạn đã có tài khoản?'
 		cover_btn.innerHTML = 'Đăng nhập'
 	}
+}
+
+
+// mobile sign-option access
+var container = document.getElementsByClassName('container')[0]
+var mobile_sign_in = document.getElementById('sign-in-mobile')
+var mobile_sign_up = document.getElementById('sign-up-mobile')
+var sign_in_form = document.getElementById('sign-in')
+var sign_up_form = document.getElementById('sign-up')
+
+var c = 1
+
+mobile_sign_up.onclick = function() {
+	container.style.height = '630px'
+	sign_in_form.style.display = 'none'	
+	sign_up_form.style.display = 'block'
+	
+	mobile_sign_in.style.borderBottom = '4px solid #2FDD92'
+	mobile_sign_in.style.borderLeft = '4px solid #2FDD92'
+	mobile_sign_in.style.borderRadius = '0 10px 0 10px'
+	mobile_sign_in.style.backgroundColor = '#FFD369'
+	mobile_sign_in.style.color = '#1F1D36'
+	mobile_sign_in.style.fontSize = '25px'
+
+	mobile_sign_up.style.backgroundColor = 'inherit'
+	mobile_sign_up.style.border = 'none'
+	mobile_sign_up.style.color = '#FF0000'
+	mobile_sign_up.style.fontSize = '30px'
+	
+}
+
+mobile_sign_in.onclick = function() {
+	container.style.height = '550px'
+	sign_in_form.style.display = 'block'	
+	sign_up_form.style.display = 'none'	
+	
+	mobile_sign_up.style.borderBottom = '4px solid #2FDD92'
+	mobile_sign_up.style.borderRight = '4px solid #2FDD92'
+	mobile_sign_up.style.borderRadius = '10px 0 10px 0'
+	mobile_sign_up.style.backgroundColor = '#FFD369'
+	mobile_sign_up.style.color = '#1F1D36'
+	mobile_sign_up.style.fontSize = '25px'
+	
+	mobile_sign_in.style.border = 'none'
+	mobile_sign_in.style.backgroundColor = 'inherit'
+	mobile_sign_in.style.color = '#FF0000'
+	mobile_sign_in.style.fontSize = '30px'
 }
