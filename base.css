@@ -1,0 +1,23 @@
+
+.btn.btn--primaty{
+min-width: 142px;
+	height: 36px;
+	text-decoration: none;
+	border: none;
+	border-radius: 2px;
+	font-size: 1.1rem;
+	padding: 0px;
+	outline: none;
+	cursor: pointer;
+	color: white;
+	background:#FF2525 ;
+}
+.btn.btn--size-s{
+	height: 32px;
+	font-size: 12px;
+}
+.btn.btn--disable{
+	color: #949494;
+	cursor: default;
+	background: #c3c3c3;
+}

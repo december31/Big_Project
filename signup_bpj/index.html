@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+	<title>Document</title>
+</head>
+<body>
+	<img src="./bg.jpg" style="z-index: -1; filter: blur(4px); position: absolute; width: 100%; height: 100%; top: 0; left: 0;" alt="">
+	<div class="container">
+		<input type="checkbox" name="" id="cover-change">
+		<div class="cover">
+			<h2>Bạn chưa có tài khoản?</h2>
+			<label for="cover-change">
+				<p id="change">ĐĂNG KÝ</p>
+			</label>
+		</div>
+		<form action="" id="sign-up">
+			<!-- <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-plus" class="svg-inline--fa fa-user-plus fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M624 208h-64v-64c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v64h-64c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h64v64c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-64h64c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zm-400 48c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg> -->
+			<h1>đăng ký</h1>
+	
+			<!-- username -->
+			<label for="username">Tên đăng nhập
+				<span class="error usn-error">Tên đăng nhập của bạn phải dài hơn 10 ký tự</span>
+				<span class="accept usn-accept">Tên đăng nhập được chấp nhận</span>
+			</label>
+			<input onblur="clearInterval(interval)" type="text" name="UserName" id="username" placeholder="Nhập tên đăng nhập của bạn">
+			
+			<!-- email -->
+			<label for="email">Email
+				<span class="error em-error">Email của bạn có dạng: abc@example.def</span>
+				<span class="accept em-accept">Email được chấp nhận</span>
+			</label>
+			<input onblur="clearInterval(interval)" type="email" novalidate name="Email" id="email" placeholder="Nhập email của bạn">
+			
+			<!-- password -->
+			<label for="password">Mật khẩu
+				<span class="error em-error">Mật khẩu của bạn quá ngắn, hãy thư mật khẩu dài hơn</span>
+				<span class="accept em-accept">Mật khẩu được chấp nhận</span>
+			</label>
+			<input onblur="clearInterval(interval)" type="password" name="Password" id="password" placeholder="Nhập mật khẩu của bạn">
+			
+			<!-- password confirmation-->
+			<label for="passwordconfirm">Nhập lại mật khẩu
+				<span class="error em-error">Sai mật khẩu</span>
+				<span class="accept em-accept">Đúng mật khẩu</span>
+			</label>
+			<input onblur="testConfirmPassword()" type="password" name="Passwordconfirm" id="passwordconfirm" placeholder="Nhập mật khẩu">
+	
+	
+			<label class="agree" for="terms-accept">
+				tôi đã đọc và đồng ý với điều khoản và dịch vụ
+				<input required type="checkbox" id="terms-accept" >
+			</label>
+			<button id="register">đăng ký</button>
+		</form>
+
+		<!-- SIGN IN -->
+		<form action="" id="sign-in">
+			<!-- <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-plus" class="svg-inline--fa fa-user-plus fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M624 208h-64v-64c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v64h-64c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h64v64c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-64h64c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zm-400 48c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg> -->
+			<h1>đăng nhập</h1>
+	
+			<!-- username -->
+			<label for="signIn-username">Tên đăng nhập
+				<!-- <span class="error usn-error">Your username must be longger than 10 letters</span>
+				<span class="accept usn-accept">Username is accepted</span> -->
+			</label>
+			<input required type="text" name="UserName" id="signIn-username" placeholder="Tên đăng nhập của ban bạn">
+			
+			<!-- email -->
+			<label for="signIn-email">Email
+				<!-- <span class="error em-error">invalid email -> examle: abc@example.def</span>
+				<span class="accept em-accept">email is accepted</span> -->
+			</label>
+			<input required type="email" novalidate name="Email" id="signIn-email" placeholder="Email của bạn">
+			
+			<!-- password -->
+			<label for="signIn-password">Password
+				<!-- <span class="error em-error">Your password too weak, try longer</span>
+				<span class="accept em-accept">password is accepted</span> -->
+			</label>
+			<input type="password" name="Password" id="signIn-password" placeholder="Your Password">
+	
+			<label class="agree" for="remember-accept">
+				remember my account
+				<input type="checkbox" id="remember-accept" >
+			</label>
+			<button id="sign-in-btn">đăng nhập</button>
+		</form>
+	</div>
+	<script src="./main.js"></script>
+</body>
+</html>

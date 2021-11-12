@@ -1,0 +1,1461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link href='https://css.gg/support.css' rel='stylesheet'>
+	<link href='https://css.gg/phone.css' rel='stylesheet'>
+	<link href='https://css.gg/profile.css' rel='stylesheet'>
+	<link href='https://css.gg/facebook.css' rel='stylesheet'>
+	<link href='https://css.gg/thermostat.css' rel='stylesheet'>
+	<link href='https://css.gg/data.css' rel='stylesheet'>
+	<link href='https://css.gg/gift.css' rel='stylesheet'>
+	<link href='https://css.gg/check.css' rel='stylesheet'>
+
+	<link rel="stylesheet" type="text/css" href=".\inputweb.css">
+	<link rel="stylesheet" type="text/css" href=".\base.css">
+	<link rel="stylesheet" href="./asset/css/style.css">
+	<link rel="stylesheet" href="./asset/icon/all.css">
+</head>
+<style >
+	.container-fluid{
+		
+		background-color: #243a76;
+	}
+	.row .t{
+		padding: 0px;
+		margin: 0px;
+	}
+	.row {
+    width: 109%;
+}
+	ul.abc >li{
+		list-style: none;
+		display: inline-block;
+	}
+	ul.abc > li{
+		
+		border-radius: 19px;
+		background-color: #1f3164;
+		height: 37px;
+		line-height: 32px;
+		text-align: center;
+		margin-right: 13px;
+	}
+	.a{
+		width: 200px;
+	}
+	ul.abc li a{
+		font-size: 11px;
+		color: white;
+		width: 50px;
+	}
+	i.gg-thermostat {
+    width: 203px;
+    line-height: 17px;
+	}
+
+	ul.abc li a:hover{
+		text-decoration: none;
+	}
+	li.b {
+    width: 130px;
+	}
+
+	li.c {
+    width: 112px;
+	}
+	input.form-control.mr-sm-2 {
+    width:569px;
+    height: 33px;
+    border-radius: 0px;
+    }
+
+	button.btn.btn-success {
+	    margin-left: -80px;
+	}
+		nav.navbar.navbar-expand-sm.navbar-dark {
+	    padding: 0px 3px 15px 0px;
+	}
+	.dropdown{
+			padding-right: 2px;
+			padding-top: 0.7px;
+	}
+	  .row .a{
+	  	text-align: center;
+	}
+	
+	li.d {
+		list-style: none;
+		display: inline-block;
+		background-color: blue;
+	}
+	@keyframes example {
+  0% {background-color: crimson;}
+  25% {background-color: lightsalmon;}
+  50% {background-color: pink;}
+  100% {background-color: indigo;}
+}
+		li.b {
+		    background-color: crimson;
+		  animation-name: example;
+		  animation-duration: 3s;
+		  animation-iteration-count: infinite;
+		}
+		p {
+		    margin-top: -23px;
+		}
+		a.nav-link.tc {
+		    background-color: red;
+		}
+
+		i {
+		    color: white;
+		}
+		.gg-phone {
+   background-color: white;
+   color: #1f3164;
+   border-radius: 8px;
+   box-sizing: border-box;
+   position: relative;
+   display: block;
+   width: 31px;
+   height: 22px;
+   transform: scale(var(--ggs,1));
+   }
+   	.gg-profile {
+    overflow: hidden;
+    transform: scale(var(--ggs,1));
+    width: 29px;
+    height: 22px;
+    position: relative;
+    background-color: white;
+    color: #1f3164;
+	}
+		.gg-facebook {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 25px;
+    height: 23px;
+    background-color: white;
+    border: 1px solid;
+    color: #1f3164;
+    border-radius: 5px;
+		}
+		.col-lg-9 {
+			font-size: 15px;
+		    color: white;
+		    margin-bottom: 10px;
+		}
+
+		a.nav-link {
+		    color: white;
+		}
+
+		a.nav-link.tc {
+		    height: 37px;
+		    padding-right: 10px;
+		    margin-top: 43px;
+		}
+
+		li.nav-item .tc{
+			border-radius: 11px;
+		    margin-right: 5px;
+		}
+
+		li.nav-item.tb {
+		    background-color: #1f3164;
+		    border-radius: 5px;
+		}
+		a.nav-link.tb {
+    border-right: 1px solid;
+		}
+		button.btn.btn-primary.dropdown-toggle {
+    background-color: orange;
+    border: none;
+    border-radius: 0px;
+    color: black;
+		}
+
+		button.btn.btn-success {
+		    background-color: orange;
+		    border-radius: 0px;
+		    height: 33px;
+		    color: black;
+		    height: 33px;
+		    margin-top: 1px;
+		}
+		button.btn.btn-primary.dropdown-toggle {
+      color: black;
+    font-size: 14px;
+		}
+		.submenu{
+			width: 265px;
+			float: left;
+			padding-left: 63px;
+		}
+		.btn.btn-primary.dropdown-toggle:hover .dropdown-menu {
+			opacity: 1;
+			visibility: visible;
+		}
+		div.dropdown-menu.ab{
+			width: 1200px;
+
+		}
+		.nav-link.cuoi
+		{ 	margin-top: 1px;
+    		font-size: 13px;
+    		background-color: #1f3164;
+    		height: 33px;
+		}
+		span.menu--one{
+			font-weight: 650;
+			border-bottom: 2px solid red;
+		}
+		.gg-check{
+			color: black;
+		}
+		.dropdown-item{
+			padding: 5px 77px 5px 5px;
+		}
+		img{
+			width: 100px;
+			margin-bottom: 20px;
+		}
+		.submenu.ab {
+    width: 150px;
+    padding-bottom: 42px;
+    }
+    .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: none;
+		}
+		.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+     color: black; 
+     background-color: #DFBC2E; 
+     border-color: none; 
+		}
+		.btn-primary.focus, .btn-primary:focus {
+    
+     box-shadow: none
+   }
+   .btn.focus, .btn:focus {
+    outline: 0;
+     box-shadow: none; 
+		}
+		.btn-primary:hover {
+    color: black;
+    background-color: #DFBC2E;
+    border-color: none;
+		}
+    /*input*/
+		.modal-dialog.modal-dialog-centered {
+    color: black;
+		}
+		.modal-header .close {
+   			padding: 0px;
+    		margin: -0.5rem -0.5rem -1rem auto;
+		}
+		.span{
+			border-bottom: none;
+		}
+		
+</style>
+<body>
+	<div class="container-fluid">
+	<div class="container">
+		<div class="row t">
+			<div class="row">
+				<ul class="abc" style="padding:0px">
+					<li class="a"><a href="">TÌM CỬA HÀNG GẦN NHẤT</a>
+					</li>
+					<li class="b"><a href=""> Khách Cá Nhân</a></li>
+					<li class="b"><a href=""> Khách Doanh nghiệp</a></li>
+					<li class="b"><a href="">Bán hàng - TP HCM</a> </li>
+					<li class="b"><a href=""> Bán hàng - Showroom </a></li>
+					<li class="c"><a href="">Tra cứu bảo hành</a></li>
+					<li class="c"><a href="">In hóa đơn điện tử</a></li>
+					<li class="c"><a href="">Tuyển dụng</a></li>
+				</ul>
+			</div>
+			<div class="row">
+				<div class="col-lg-3">
+					<img style="width:150px"src="F:\lt web\anh\cho-con-de-thuong-4.jpg">
+				</div>
+				<div class="col-lg-9">
+					<ul class="nav">
+					  <li class="nav-item tc">
+					    <a class="nav-link tc" href="#" ><i class="gg-support"></i><p>&nbsp &nbsp &nbsp &nbspXây dựng cấu hình máy tính</p></a>
+					  </li>
+					  <li class="nav-item tc">
+					    <a class="nav-link tc" href="#"><i class="gg-thermostat">&nbsp&nbsp Xây dựng tản nhiệt nước PC</i></a>
+					  </li>
+					  <li class="nav-item tb">
+					    <a class="nav-link tb" href="#"><i class="gg-phone"></i>Mua hàng online
+					    	<br>0971609339</a>
+					  </li>
+					  
+  <button type="button" class=" btn btn-primary" data-toggle="modal"
+  style="width:119px;padding:0px;background-color: #1f3164;box-shadow: none;border: none;">
+  	<a class="nav-link tb" style="padding:0px;text-align:none" href="./signup_bpj/index.html"><i class="gg-profile"></i>
+					    	Đăng nhập<br>Đăng kí</a>
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h3 class="auth-form_heading">Đăng ký</h3>
+          <span class="auth-form_switch-btn" style="border: none">Đăng nhập</span>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="auth-form">
+	<div class="auth-form_container">
+	<div class="auth-form_hearder">
+		<!-- <h3 class="auth-form_heading">Đăng ký</h3>
+		<span class="auth-form_switch-btn">Đăng nhập</span> -->
+	</div>
+	<div class="auth-form_form">
+		<div class="auth-form_group">
+			<input type="email" class="auth-form_input" placeholder="Email của bạn">
+		</div>
+		<div class="auth-form_group">
+			<input type="password" class="auth-form_input" placeholder="Mật khẩu của bạn">
+		</div>
+		<div class="auth-form_group">
+			<input type="password" class="auth-form_input" placeholder="Nhập lại mật khẩu">
+		</div>
+	</div>
+	<div class="auth-form_aside">
+		<p class="auth-form_policy-text">
+			Bằng việc đăng kí, ban đã đồng ý với laptoppro về
+			<a href="" class="auth-form_policy-link">Điều khoản dịch vụ&nbsp</a>&<a href="" class="auth-form_policy-link">&nbspChính sách bảo mật</a>
+		</p>
+	</div>
+
+	<div class="auth-form_controls">
+		<button class="btn btn--primaty">ĐĂNG KÍ</button>
+	</div>
+	</div>
+	<div class="auth-form_scocials">
+		<a href="" class="auth-form_scocials--facebook btn btn--with-icon">
+			<i class=" fab fa-facebook-messenger"></i>
+			Kết nối với Messenger
+		</a>
+		<a href="" class="auth-form_scocials--google btn btn--with-icon">
+			<div class="XhfvJd">
+	<svg xmlns="https://www.w3.org/2000/svg";width="22" height="22" viewBox="0 0 48 48" aria-hidden="true" class="L5wZDc">
+		<path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"></path>
+		<path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"></path>
+		<path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24c0 3.55.85 6.91 2.34 9.88l7.35-5.7z"></path>
+		<path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"></path>
+		<path fill="none" d="M2 2h44v44H2z"></path>
+	</svg>
+	Kết nối với Google
+</div>
+			
+		</a>
+	</div>
+</div>
+        </div>
+        
+        <!-- Modal footer -->
+        
+      </div>
+    </div>
+  </div>				 
+	<li class="nav-item tb">
+					    <a class="nav-link " href="#"><i class="gg-facebook"></i>FACEBOOK</a>
+					  </li>
+					</ul>
+				</div>
+			</div>
+			<div class="row ">
+				<div class="dropdown">
+  			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+    		Chính sách - Hướng dẫn 
+  			</button>
+  			<div class="dropdown-menu ab" >
+  				<div class="submenu">
+  					<span class="menu--one">HỖ TRỢ KHÁCH HÀNG</span>
+		    		<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspHướng dẫn mua hàng trực tuyến</i></a>
+		    		<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspHướng dẫn thanh toán</i></a>
+		    		<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspHướng dẫn trả góp</i></a>
+		    		<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspTra cứu hóa đơn</i></a>
+		    		<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspGửi yêu cầu bảo hành</i></a>
+		    		<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspGóp ý,khiếu nại</i></a>
+	    		</div>
+	    		<div class="submenu">
+  					<span class="menu--one">CHÍNH SÁCH CHUNG</span>
+  					<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspChính sách chung</i></a>
+  					<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspChính sách bảo mật</i></a>
+  					<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspChính sách giao hàng</i></a>
+  					<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspChính sách chính hãng</i></a>
+  					<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspChính sách doanh nghiệp</i></a>
+	    		</div>
+	    		<div class="submenu">
+  					<span class="menu--one">THÔNG TIN KHIẾU LẠI </span>
+  					<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspSản phẩm khiếu lại</i></a>
+  					<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspThông tin khiếu lại</i></a>
+	    		</div>
+	    		<div class="submenu">
+  					<span class="menu--one">THÔNG TIN CỬA HÀNG</span>
+  					<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspGiới thiệu</i></a>
+  					<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspTuyển dụng</i></a>
+  					<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspTin tức công nghệ</i></a>
+  					<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspLiên Hệ</i></a>
+	    		</div>
+  			</div>
+  		</div>
+  			<div class="dropdown">
+  			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+    		Tìm theo hãng 
+  			</button>
+  			<div class="dropdown-menu ab" style="width:500px">
+  				<div>
+  					<span>HỖ TRỢ KHÁCH HÀNG</span>
+  				</div>
+  				<div class="submenu ab" >
+		    		<a class="dropdown-item ab" href="#"><img src="https://hanoicomputercdn.com/media/brand/asus.jpg"></a>
+	    			<a class="dropdown-item ab" href="#"><img src="https://hanoicomputercdn.com/media/brand/acer.jpg"></a>
+  					
+	    		</div>
+	    		<div class="submenu ab">
+  					<a class="dropdown-item ab" href="#"><img style="width:60px" src="https://hanoicomputercdn.com/media/brand/hp.jpg"></a>
+  					<a class="dropdown-item ab" href="#"><img src="https://hanoicomputercdn.com/media/brand/msi.jpg"></a>
+	    		</div>
+	    		<div class="submenu ab">
+	    			<a class="dropdown-item ab" href="#"><img style="width:60px" src="https://hanoicomputercdn.com/media/brand/dell.jpg"></a>
+	    		</div>
+  			</div>
+  		</div>
+  			
+				<nav class="navbar navbar-expand-sm  navbar-dark">
+				  <form class="form-inline" action="/action_page.php" style="margin-top: 1px;">
+				    <input class="form-control mr-sm-2" type="text" placeholder="Nhập tên sản phẩm, từ khóa cần tìm">
+				    <button class="btn btn-success" type="submit">Search</button>
+				  </form>
+				</nav>
+				<ul class="nav" >
+							<li class="nav-item" style="margin-right:5px ">
+								<a class="nav-link cuoi"  href="#"><i class="gg-data" style="padding-top: 4px;"></i><p style="padding-top:9px ;">&nbsp &nbsp &nbsp&nbsp&nbspTin công nghệ</p></a>
+							</li>
+							<li class="nav-item" >
+								<a class="nav-link cuoi"  href="#"><i class="gg-gift"></i><p>&nbsp&nbsp &nbsp &nbsp &nbspKhuyến mãi</p></a>
+							</li>
+						</ul>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="main">
+		<!-- slider -->
+		<div id="slider">
+			<div class="row-slider">
+				<div class="big-slider col-slider col-sd-7">
+					<img src="./asset/img/slider/bigleft.png" alt="">
+				</div>
+				<div class="sub-slider col-slider col-sd-3">
+					<img src="./asset/img/slider/subslider.png" alt="">
+					<img src="./asset/img/slider/subslider2.png" alt="">
+				</div>
+			</div>
+			<div class="slider-contact row-slider">
+				<div class="slider-contact-section col-slider col-sd-6"><img src="./asset/img/slider/slider-contact.png" alt=""></div>
+				<div class="slider-contact-section col-slider col-sd-6"><img src="./asset/img/slider/slider-contact.png" alt=""></div>
+				<div class="slider-contact-section col-slider col-sd-6"><img src="./asset/img/slider/slider-contact.png" alt=""></div>
+				<div class="slider-contact-section col-slider col-sd-6"><img src="./asset/img/slider/slider-contact.png" alt=""></div>
+				<div class="slider-contact-section col-slider col-sd-6"><img src="./asset/img/slider/slider-contact.png" alt=""></div>
+				<div class="slider-contact-section col-slider col-sd-6"><img src="./asset/img/slider/slider-contact.png" alt=""></div>
+			</div>
+			<div class="company row-slider">
+				<div class="company-section"><img src="./asset/img/slider/acer.png" alt=""></div>
+				<div class="company-section"><img src="./asset/img/slider/dell.png" alt=""></div>
+				<div class="company-section"><img src="./asset/img/slider/hp.png" alt=""></div>
+				<div class="company-section"><img src="./asset/img/slider/lenovo.png" alt=""></div>
+				<div class="company-section"><img src="./asset/img/slider/lg.png" alt=""></div>
+				<div class="company-section"><img src="./asset/img/slider/macbook.png" alt=""></div>
+				<div class="company-section"><img src="./asset/img/slider/msi.png" alt=""></div>
+			</div>
+		</div>
+		<div class="content">
+			<!-- row 1 -->
+			<div class="prd-container">
+				<div class="pro-header">
+					<a href="#"><h3>SẢN PHẨM HOT</h3></a>
+				</div>
+				<div class="product">
+					<div class="row-slider product-left-section col-slider col-ct-4">
+						<img src="./asset/img/product/pro_poster.jpg" alt="">
+					</div>
+					<div class="row-slider product-right-section col-slider col-ct-6">
+
+						<!-- product 3 -->
+						<div class="prd-section col-ct-3">
+							<div class="img-container">
+								<a href="">
+									<img src="./asset/img/product/pro1.jpg" alt="">
+								</a>
+								<!-- product details -->
+								<div class="prd-details prd-left-details">
+									<p class="prd-details-name">[Mới 100% Full box] Laptop HP 250 G8 2R9H2EA - Intel Core i3</p>
+									<p class="prd-details-price">11.990.000đ</p>
+									<div class="prd-details-guarantee">
+										<h4>Bảo hành:</h4>
+										<p><i class="far fa-check-square"></i>Bảo hành 12 tháng</p>
+										<p><i class="far fa-check-square"></i>miễn phí giao hàng tận nhà</p>
+									</div>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng cho đơn hàng < 5km tính từ cửa hàng laptop88 gần nhất</p>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng (khách hàng chịu phí bảo hiểm hàng hóa nếu có)</p>
+									<div class="status">
+										<h4>Kho hàng:</h4>
+										<p>Còn hàng</p>
+									</div>
+									<span class="p-summary details-sumary">
+										<h4 style="display: inline-block;">Mô tả tóm tắt: </h4>
+										Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+										Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+										Giá rẻ nhất thị trường<br>
+									</span>
+								</div>
+								<!-- end product details -->
+							</div>
+							<a href="" class="p-name">[Mới 100% Full box] Laptop Dell Inspiron 3510 76CCW  - Intel Pentinum </a>
+							<span class="p-summary"> 
+								Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+								<br>
+								Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+								<br>
+								Giá rẻ nhất thị trường<br>
+							</span>
+							<div class="old-price-all">
+								<span class="old-price">14.990.000đ</span>
+								<span class="discount">-21%</span>
+							</div>
+							<span class="new-price">11.990.000</span>
+						</div>
+						
+						<!-- product 2 -->
+						<div class="prd-section col-ct-3">
+							<div class="img-container">
+							<a href="">
+								<img src="./asset/img/product/pro2.jpg" alt="">
+							</a>
+								<!-- product details -->
+								<div class="prd-details">
+									<p class="prd-details-name">[Mới 100% Full box] Laptop HP 250 G8 2R9H2EA - Intel Core i3</p>
+									<p class="prd-details-price">11.990.000đ</p>
+									<div class="prd-details-guarantee">
+										<h4>Bảo hành:</h4>
+										<p><i class="far fa-check-square"></i>Bảo hành 12 tháng</p>
+										<p><i class="far fa-check-square"></i>miễn phí giao hàng tận nhà</p>
+									</div>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng cho đơn hàng < 5km tính từ cửa hàng laptop88 gần nhất</p>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng (khách hàng chịu phí bảo hiểm hàng hóa nếu có)</p>
+									<div class="status">
+										<h4>Kho hàng:</h4>
+										<p>Còn hàng</p>
+									</div>
+									<span class="p-summary details-sumary">
+										<h4 style="display: inline-block;">Mô tả tóm tắt: </h4>
+										Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+										Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+										Giá rẻ nhất thị trường<br>
+									</span>
+								</div>
+								<!-- end product details -->							
+							</div>
+							<a href="" class="p-name">[Mới 100% Full Box] Laptop Asus Zenbook Q408UG- AMD Ryzen 5</a>
+							<span class="p-summary"> 
+								Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+								<br>
+								Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+								<br>
+								Giá rẻ nhất thị trường<br>
+							</span>
+							<div class="old-price-all">
+								<span class="old-price">14.990.000đ</span>
+								<span class="discount">-21%</span>
+							</div>
+							<span class="new-price">11.990.000</span>
+						</div>
+
+						<!-- product 1 -->
+						<div class="prd-section col-ct-3">
+							<div class="img-container">
+								<a href="">
+									<img src="./asset/img/product/pro3.jpg" alt="">
+								</a>
+								<!-- product details -->
+								<div class="prd-details">
+									<p class="prd-details-name">[Mới 100% Full box] Laptop HP 250 G8 2R9H2EA - Intel Core i3</p>
+									<p class="prd-details-price">11.990.000đ</p>
+									<div class="prd-details-guarantee">
+										<h4>Bảo hành:</h4>
+										<p><i class="far fa-check-square"></i>Bảo hành 12 tháng</p>
+										<p><i class="far fa-check-square"></i>miễn phí giao hàng tận nhà</p>
+									</div>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng cho đơn hàng < 5km tính từ cửa hàng laptop88 gần nhất</p>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng (khách hàng chịu phí bảo hiểm hàng hóa nếu có)</p>
+									<div class="status">
+										<h4>Kho hàng:</h4>
+										<p>Còn hàng</p>
+									</div>
+									<span class="p-summary details-sumary">
+										<h4 style="display: inline-block;">Mô tả tóm tắt: </h4>
+										Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+										Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+										Giá rẻ nhất thị trường<br>
+									</span>
+								</div>
+								<!-- end product details -->
+
+							</div>
+							<a href="" class="p-name">[Mới 100% Full box] Laptop HP 250 G8 2R9H2EA - Intel Core i3</a>
+							<span class="p-summary"> 
+								Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+								<br>
+								Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+								<br>
+								Giá rẻ nhất thị trường<br>
+							</span>
+							<div class="old-price-all">
+								<span class="old-price">14.990.000đ</span>
+								<span class="discount">-21%</span>
+							</div>
+							<span class="new-price">11.990.000</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- row 2 -->
+			<div class="prd-container">
+				<div class="pro-header">
+					<a href=""><h3>HỌC TẬP - VĂN PHÒNG</h3></a>
+				</div>
+				<div class="product">
+					<div class="row-slider product-left-section col-slider col-ct-4">
+						<img src="./asset/img/product/pro_poster.jpg" alt="">
+					</div>
+					<div class="row-slider product-right-section col-slider col-ct-6">
+
+						<!-- product 3 -->
+						<div class="prd-section col-ct-3">
+							<div class="img-container">
+								<a href="">
+									<img src="./asset/img/product/pro1.jpg" alt="">
+								</a>
+								<!-- product details -->
+								<div class="prd-details prd-left-details">
+									<p class="prd-details-name">[Mới 100% Full box] Laptop HP 250 G8 2R9H2EA - Intel Core i3</p>
+									<p class="prd-details-price">11.990.000đ</p>
+									<div class="prd-details-guarantee">
+										<h4>Bảo hành:</h4>
+										<p><i class="far fa-check-square"></i>Bảo hành 12 tháng</p>
+										<p><i class="far fa-check-square"></i>miễn phí giao hàng tận nhà</p>
+									</div>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng cho đơn hàng < 5km tính từ cửa hàng laptop88 gần nhất</p>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng (khách hàng chịu phí bảo hiểm hàng hóa nếu có)</p>
+									<div class="status">
+										<h4>Kho hàng:</h4>
+										<p>Còn hàng</p>
+									</div>
+									<span class="p-summary details-sumary">
+										<h4 style="display: inline-block;">Mô tả tóm tắt: </h4>
+										Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+										Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+										Giá rẻ nhất thị trường<br>
+									</span>
+								</div>
+								<!-- end product details -->
+							</div>
+							<a href="" class="p-name">[Mới 100% Full box] Laptop Dell Inspiron 3510 76CCW  - Intel Pentinum </a>
+							<span class="p-summary"> 
+								Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+								<br>
+								Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+								<br>
+								Giá rẻ nhất thị trường<br>
+							</span>
+							<div class="old-price-all">
+								<span class="old-price">14.990.000đ</span>
+								<span class="discount">-21%</span>
+							</div>
+							<span class="new-price">11.990.000</span>
+						</div>
+						
+						<!-- product 2 -->
+						<div class="prd-section col-ct-3">
+							<div class="img-container">
+							<a href="">
+								<img src="./asset/img/product/pro2.jpg" alt="">
+							</a>
+								<!-- product details -->
+								<div class="prd-details">
+									<p class="prd-details-name">[Mới 100% Full box] Laptop HP 250 G8 2R9H2EA - Intel Core i3</p>
+									<p class="prd-details-price">11.990.000đ</p>
+									<div class="prd-details-guarantee">
+										<h4>Bảo hành:</h4>
+										<p><i class="far fa-check-square"></i>Bảo hành 12 tháng</p>
+										<p><i class="far fa-check-square"></i>miễn phí giao hàng tận nhà</p>
+									</div>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng cho đơn hàng < 5km tính từ cửa hàng laptop88 gần nhất</p>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng (khách hàng chịu phí bảo hiểm hàng hóa nếu có)</p>
+									<div class="status">
+										<h4>Kho hàng:</h4>
+										<p>Còn hàng</p>
+									</div>
+									<span class="p-summary details-sumary">
+										<h4 style="display: inline-block;">Mô tả tóm tắt: </h4>
+										Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+										Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+										Giá rẻ nhất thị trường<br>
+									</span>
+								</div>
+								<!-- end product details -->							
+							</div>
+							<a href="" class="p-name">[Mới 100% Full Box] Laptop Asus Zenbook Q408UG- AMD Ryzen 5</a>
+							<span class="p-summary"> 
+								Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+								<br>
+								Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+								<br>
+								Giá rẻ nhất thị trường<br>
+							</span>
+							<div class="old-price-all">
+								<span class="old-price">14.990.000đ</span>
+								<span class="discount">-21%</span>
+							</div>
+							<span class="new-price">11.990.000</span>
+						</div>
+
+						<!-- product 1 -->
+						<div class="prd-section col-ct-3">
+							<div class="img-container">
+								<a href="">
+									<img src="./asset/img/product/pro3.jpg" alt="">
+								</a>
+								<!-- product details -->
+								<div class="prd-details">
+									<p class="prd-details-name">[Mới 100% Full box] Laptop HP 250 G8 2R9H2EA - Intel Core i3</p>
+									<p class="prd-details-price">11.990.000đ</p>
+									<div class="prd-details-guarantee">
+										<h4>Bảo hành:</h4>
+										<p><i class="far fa-check-square"></i>Bảo hành 12 tháng</p>
+										<p><i class="far fa-check-square"></i>miễn phí giao hàng tận nhà</p>
+									</div>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng cho đơn hàng < 5km tính từ cửa hàng laptop88 gần nhất</p>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng (khách hàng chịu phí bảo hiểm hàng hóa nếu có)</p>
+									<div class="status">
+										<h4>Kho hàng:</h4>
+										<p>Còn hàng</p>
+									</div>
+									<span class="p-summary details-sumary">
+										<h4 style="display: inline-block;">Mô tả tóm tắt: </h4>
+										Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+										Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+										Giá rẻ nhất thị trường<br>
+									</span>
+								</div>
+								<!-- end product details -->
+
+							</div>
+							<a href="" class="p-name">[Mới 100% Full box] Laptop HP 250 G8 2R9H2EA - Intel Core i3</a>
+							<span class="p-summary"> 
+								Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+								<br>
+								Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+								<br>
+								Giá rẻ nhất thị trường<br>
+							</span>
+							<div class="old-price-all">
+								<span class="old-price">14.990.000đ</span>
+								<span class="discount">-21%</span>
+							</div>
+							<span class="new-price">11.990.000</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- row 3 -->
+			<div class="prd-container">
+				<div class="pro-header">
+					<a href=""><h3>ĐỒ HỌA - KỸ THUẬT</h3></a>
+				</div>
+				<div class="product">
+					<div class="row-slider product-left-section col-slider col-ct-4">
+						<img src="./asset/img/product/pro_poster.jpg" alt="">
+					</div>
+					<div class="row-slider product-right-section col-slider col-ct-6">
+
+						<!-- product 3 -->
+						<div class="prd-section col-ct-3">
+							<div class="img-container">
+								<a href="">
+									<img src="./asset/img/product/pro1.jpg" alt="">
+								</a>
+								<!-- product details -->
+								<div class="prd-details prd-left-details">
+									<p class="prd-details-name">[Mới 100% Full box] Laptop HP 250 G8 2R9H2EA - Intel Core i3</p>
+									<p class="prd-details-price">11.990.000đ</p>
+									<div class="prd-details-guarantee">
+										<h4>Bảo hành:</h4>
+										<p><i class="far fa-check-square"></i>Bảo hành 12 tháng</p>
+										<p><i class="far fa-check-square"></i>miễn phí giao hàng tận nhà</p>
+									</div>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng cho đơn hàng < 5km tính từ cửa hàng laptop88 gần nhất</p>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng (khách hàng chịu phí bảo hiểm hàng hóa nếu có)</p>
+									<div class="status">
+										<h4>Kho hàng:</h4>
+										<p>Còn hàng</p>
+									</div>
+									<span class="p-summary details-sumary">
+										<h4 style="display: inline-block;">Mô tả tóm tắt: </h4>
+										Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+										Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+										Giá rẻ nhất thị trường<br>
+									</span>
+								</div>
+								<!-- end product details -->
+							</div>
+							<a href="" class="p-name">[Mới 100% Full box] Laptop Dell Inspiron 3510 76CCW  - Intel Pentinum </a>
+							<span class="p-summary"> 
+								Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+								<br>
+								Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+								<br>
+								Giá rẻ nhất thị trường<br>
+							</span>
+							<div class="old-price-all">
+								<span class="old-price">14.990.000đ</span>
+								<span class="discount">-21%</span>
+							</div>
+							<span class="new-price">11.990.000</span>
+						</div>
+						
+						<!-- product 2 -->
+						<div class="prd-section col-ct-3">
+							<div class="img-container">
+							<a href="">
+								<img src="./asset/img/product/pro2.jpg" alt="">
+							</a>
+								<!-- product details -->
+								<div class="prd-details">
+									<p class="prd-details-name">[Mới 100% Full box] Laptop HP 250 G8 2R9H2EA - Intel Core i3</p>
+									<p class="prd-details-price">11.990.000đ</p>
+									<div class="prd-details-guarantee">
+										<h4>Bảo hành:</h4>
+										<p><i class="far fa-check-square"></i>Bảo hành 12 tháng</p>
+										<p><i class="far fa-check-square"></i>miễn phí giao hàng tận nhà</p>
+									</div>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng cho đơn hàng < 5km tính từ cửa hàng laptop88 gần nhất</p>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng (khách hàng chịu phí bảo hiểm hàng hóa nếu có)</p>
+									<div class="status">
+										<h4>Kho hàng:</h4>
+										<p>Còn hàng</p>
+									</div>
+									<span class="p-summary details-sumary">
+										<h4 style="display: inline-block;">Mô tả tóm tắt: </h4>
+										Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+										Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+										Giá rẻ nhất thị trường<br>
+									</span>
+								</div>
+								<!-- end product details -->							
+							</div>
+							<a href="" class="p-name">[Mới 100% Full Box] Laptop Asus Zenbook Q408UG- AMD Ryzen 5</a>
+							<span class="p-summary"> 
+								Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+								<br>
+								Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+								<br>
+								Giá rẻ nhất thị trường<br>
+							</span>
+							<div class="old-price-all">
+								<span class="old-price">14.990.000đ</span>
+								<span class="discount">-21%</span>
+							</div>
+							<span class="new-price">11.990.000</span>
+						</div>
+
+						<!-- product 1 -->
+						<div class="prd-section col-ct-3">
+							<div class="img-container">
+								<a href="">
+									<img src="./asset/img/product/pro3.jpg" alt="">
+								</a>
+								<!-- product details -->
+								<div class="prd-details">
+									<p class="prd-details-name">[Mới 100% Full box] Laptop HP 250 G8 2R9H2EA - Intel Core i3</p>
+									<p class="prd-details-price">11.990.000đ</p>
+									<div class="prd-details-guarantee">
+										<h4>Bảo hành:</h4>
+										<p><i class="far fa-check-square"></i>Bảo hành 12 tháng</p>
+										<p><i class="far fa-check-square"></i>miễn phí giao hàng tận nhà</p>
+									</div>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng cho đơn hàng < 5km tính từ cửa hàng laptop88 gần nhất</p>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng (khách hàng chịu phí bảo hiểm hàng hóa nếu có)</p>
+									<div class="status">
+										<h4>Kho hàng:</h4>
+										<p>Còn hàng</p>
+									</div>
+									<span class="p-summary details-sumary">
+										<h4 style="display: inline-block;">Mô tả tóm tắt: </h4>
+										Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+										Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+										Giá rẻ nhất thị trường<br>
+									</span>
+								</div>
+								<!-- end product details -->
+
+							</div>
+							<a href="" class="p-name">[Mới 100% Full box] Laptop HP 250 G8 2R9H2EA - Intel Core i3</a>
+							<span class="p-summary"> 
+								Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+								<br>
+								Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+								<br>
+								Giá rẻ nhất thị trường<br>
+							</span>
+							<div class="old-price-all">
+								<span class="old-price">14.990.000đ</span>
+								<span class="discount">-21%</span>
+							</div>
+							<span class="new-price">11.990.000</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- row 4 -->
+			<div class="prd-container">
+				<div class="pro-header">
+					<a href=""><h3>LAPTOP GAMING</h3></a>
+				</div>
+				<div class="product">
+					<div class="row-slider product-left-section col-slider col-ct-4">
+						<img src="./asset/img/product/pro_poster.jpg" alt="">
+					</div>
+					<div class="row-slider product-right-section col-slider col-ct-6">
+
+						<!-- product 3 -->
+						<div class="prd-section col-ct-3">
+							<div class="img-container">
+								<a href="">
+									<img src="./asset/img/product/pro1.jpg" alt="">
+								</a>
+								<!-- product details -->
+								<div class="prd-details prd-left-details">
+									<p class="prd-details-name">[Mới 100% Full box] Laptop HP 250 G8 2R9H2EA - Intel Core i3</p>
+									<p class="prd-details-price">11.990.000đ</p>
+									<div class="prd-details-guarantee">
+										<h4>Bảo hành:</h4>
+										<p><i class="far fa-check-square"></i>Bảo hành 12 tháng</p>
+										<p><i class="far fa-check-square"></i>miễn phí giao hàng tận nhà</p>
+									</div>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng cho đơn hàng < 5km tính từ cửa hàng laptop88 gần nhất</p>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng (khách hàng chịu phí bảo hiểm hàng hóa nếu có)</p>
+									<div class="status">
+										<h4>Kho hàng:</h4>
+										<p>Còn hàng</p>
+									</div>
+									<span class="p-summary details-sumary">
+										<h4 style="display: inline-block;">Mô tả tóm tắt: </h4>
+										Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+										Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+										Giá rẻ nhất thị trường<br>
+									</span>
+								</div>
+								<!-- end product details -->
+							</div>
+							<a href="" class="p-name">[Mới 100% Full box] Laptop Dell Inspiron 3510 76CCW  - Intel Pentinum </a>
+							<span class="p-summary"> 
+								Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+								<br>
+								Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+								<br>
+								Giá rẻ nhất thị trường<br>
+							</span>
+							<div class="old-price-all">
+								<span class="old-price">14.990.000đ</span>
+								<span class="discount">-21%</span>
+							</div>
+							<span class="new-price">11.990.000</span>
+						</div>
+						
+						<!-- product 2 -->
+						<div class="prd-section col-ct-3">
+							<div class="img-container">
+							<a href="">
+								<img src="./asset/img/product/pro2.jpg" alt="">
+							</a>
+								<!-- product details -->
+								<div class="prd-details">
+									<p class="prd-details-name">[Mới 100% Full box] Laptop HP 250 G8 2R9H2EA - Intel Core i3</p>
+									<p class="prd-details-price">11.990.000đ</p>
+									<div class="prd-details-guarantee">
+										<h4>Bảo hành:</h4>
+										<p><i class="far fa-check-square"></i>Bảo hành 12 tháng</p>
+										<p><i class="far fa-check-square"></i>miễn phí giao hàng tận nhà</p>
+									</div>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng cho đơn hàng < 5km tính từ cửa hàng laptop88 gần nhất</p>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng (khách hàng chịu phí bảo hiểm hàng hóa nếu có)</p>
+									<div class="status">
+										<h4>Kho hàng:</h4>
+										<p>Còn hàng</p>
+									</div>
+									<span class="p-summary details-sumary">
+										<h4 style="display: inline-block;">Mô tả tóm tắt: </h4>
+										Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+										Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+										Giá rẻ nhất thị trường<br>
+									</span>
+								</div>
+								<!-- end product details -->							
+							</div>
+							<a href="" class="p-name">[Mới 100% Full Box] Laptop Asus Zenbook Q408UG- AMD Ryzen 5</a>
+							<span class="p-summary"> 
+								Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+								<br>
+								Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+								<br>
+								Giá rẻ nhất thị trường<br>
+							</span>
+							<div class="old-price-all">
+								<span class="old-price">14.990.000đ</span>
+								<span class="discount">-21%</span>
+							</div>
+							<span class="new-price">11.990.000</span>
+						</div>
+
+						<!-- product 1 -->
+						<div class="prd-section col-ct-3">
+							<div class="img-container">
+								<a href="">
+									<img src="./asset/img/product/pro3.jpg" alt="">
+								</a>
+								<!-- product details -->
+								<div class="prd-details">
+									<p class="prd-details-name">[Mới 100% Full box] Laptop HP 250 G8 2R9H2EA - Intel Core i3</p>
+									<p class="prd-details-price">11.990.000đ</p>
+									<div class="prd-details-guarantee">
+										<h4>Bảo hành:</h4>
+										<p><i class="far fa-check-square"></i>Bảo hành 12 tháng</p>
+										<p><i class="far fa-check-square"></i>miễn phí giao hàng tận nhà</p>
+									</div>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng cho đơn hàng < 5km tính từ cửa hàng laptop88 gần nhất</p>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng (khách hàng chịu phí bảo hiểm hàng hóa nếu có)</p>
+									<div class="status">
+										<h4>Kho hàng:</h4>
+										<p>Còn hàng</p>
+									</div>
+									<span class="p-summary details-sumary">
+										<h4 style="display: inline-block;">Mô tả tóm tắt: </h4>
+										Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+										Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+										Giá rẻ nhất thị trường<br>
+									</span>
+								</div>
+								<!-- end product details -->
+
+							</div>
+							<a href="" class="p-name">[Mới 100% Full box] Laptop HP 250 G8 2R9H2EA - Intel Core i3</a>
+							<span class="p-summary"> 
+								Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+								<br>
+								Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+								<br>
+								Giá rẻ nhất thị trường<br>
+							</span>
+							<div class="old-price-all">
+								<span class="old-price">14.990.000đ</span>
+								<span class="discount">-21%</span>
+							</div>
+							<span class="new-price">11.990.000</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- row 5 -->
+			<div class="prd-container">
+				<div class="pro-header">
+					<a href=""><h3>CAO CẤP - SANG TRỌNG</h3></a>
+				</div>
+				<div class="product">
+					<div class="row-slider product-left-section col-slider col-ct-4">
+						<img src="./asset/img/product/pro_poster.jpg" alt="">
+					</div>
+					<div class="row-slider product-right-section col-slider col-ct-6">
+
+						<!-- product 3 -->
+						<div class="prd-section col-ct-3">
+							<div class="img-container">
+								<a href="">
+									<img src="./asset/img/product/pro1.jpg" alt="">
+								</a>
+								<!-- product details -->
+								<div class="prd-details prd-left-details">
+									<p class="prd-details-name">[Mới 100% Full box] Laptop HP 250 G8 2R9H2EA - Intel Core i3</p>
+									<p class="prd-details-price">11.990.000đ</p>
+									<div class="prd-details-guarantee">
+										<h4>Bảo hành:</h4>
+										<p><i class="far fa-check-square"></i>Bảo hành 12 tháng</p>
+										<p><i class="far fa-check-square"></i>miễn phí giao hàng tận nhà</p>
+									</div>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng cho đơn hàng < 5km tính từ cửa hàng laptop88 gần nhất</p>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng (khách hàng chịu phí bảo hiểm hàng hóa nếu có)</p>
+									<div class="status">
+										<h4>Kho hàng:</h4>
+										<p>Còn hàng</p>
+									</div>
+									<span class="p-summary details-sumary">
+										<h4 style="display: inline-block;">Mô tả tóm tắt: </h4>
+										Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+										Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+										Giá rẻ nhất thị trường<br>
+									</span>
+								</div>
+								<!-- end product details -->
+							</div>
+							<a href="" class="p-name">[Mới 100% Full box] Laptop Dell Inspiron 3510 76CCW  - Intel Pentinum </a>
+							<span class="p-summary"> 
+								Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+								<br>
+								Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+								<br>
+								Giá rẻ nhất thị trường<br>
+							</span>
+							<div class="old-price-all">
+								<span class="old-price">14.990.000đ</span>
+								<span class="discount">-21%</span>
+							</div>
+							<span class="new-price">11.990.000</span>
+						</div>
+						
+						<!-- product 2 -->
+						<div class="prd-section col-ct-3">
+							<div class="img-container">
+							<a href="">
+								<img src="./asset/img/product/pro2.jpg" alt="">
+							</a>
+								<!-- product details -->
+								<div class="prd-details">
+									<p class="prd-details-name">[Mới 100% Full box] Laptop HP 250 G8 2R9H2EA - Intel Core i3</p>
+									<p class="prd-details-price">11.990.000đ</p>
+									<div class="prd-details-guarantee">
+										<h4>Bảo hành:</h4>
+										<p><i class="far fa-check-square"></i>Bảo hành 12 tháng</p>
+										<p><i class="far fa-check-square"></i>miễn phí giao hàng tận nhà</p>
+									</div>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng cho đơn hàng < 5km tính từ cửa hàng laptop88 gần nhất</p>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng (khách hàng chịu phí bảo hiểm hàng hóa nếu có)</p>
+									<div class="status">
+										<h4>Kho hàng:</h4>
+										<p>Còn hàng</p>
+									</div>
+									<span class="p-summary details-sumary">
+										<h4 style="display: inline-block;">Mô tả tóm tắt: </h4>
+										Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+										Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+										Giá rẻ nhất thị trường<br>
+									</span>
+								</div>
+								<!-- end product details -->							
+							</div>
+							<a href="" class="p-name">[Mới 100% Full Box] Laptop Asus Zenbook Q408UG- AMD Ryzen 5</a>
+							<span class="p-summary"> 
+								Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+								<br>
+								Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+								<br>
+								Giá rẻ nhất thị trường<br>
+							</span>
+							<div class="old-price-all">
+								<span class="old-price">14.990.000đ</span>
+								<span class="discount">-21%</span>
+							</div>
+							<span class="new-price">11.990.000</span>
+						</div>
+
+						<!-- product 1 -->
+						<div class="prd-section col-ct-3">
+							<div class="img-container">
+								<a href="">
+									<img src="./asset/img/product/pro3.jpg" alt="">
+								</a>
+								<!-- product details -->
+								<div class="prd-details">
+									<p class="prd-details-name">[Mới 100% Full box] Laptop HP 250 G8 2R9H2EA - Intel Core i3</p>
+									<p class="prd-details-price">11.990.000đ</p>
+									<div class="prd-details-guarantee">
+										<h4>Bảo hành:</h4>
+										<p><i class="far fa-check-square"></i>Bảo hành 12 tháng</p>
+										<p><i class="far fa-check-square"></i>miễn phí giao hàng tận nhà</p>
+									</div>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng cho đơn hàng < 5km tính từ cửa hàng laptop88 gần nhất</p>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng (khách hàng chịu phí bảo hiểm hàng hóa nếu có)</p>
+									<div class="status">
+										<h4>Kho hàng:</h4>
+										<p>Còn hàng</p>
+									</div>
+									<span class="p-summary details-sumary">
+										<h4 style="display: inline-block;">Mô tả tóm tắt: </h4>
+										Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+										Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+										Giá rẻ nhất thị trường<br>
+									</span>
+								</div>
+								<!-- end product details -->
+
+							</div>
+							<a href="" class="p-name">[Mới 100% Full box] Laptop HP 250 G8 2R9H2EA - Intel Core i3</a>
+							<span class="p-summary"> 
+								Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+								<br>
+								Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+								<br>
+								Giá rẻ nhất thị trường<br>
+							</span>
+							<div class="old-price-all">
+								<span class="old-price">14.990.000đ</span>
+								<span class="discount">-21%</span>
+							</div>
+							<span class="new-price">11.990.000</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- row 6 -->
+			<div class="prd-container">
+				<div class="pro-header">
+					<a href=""><h3>CAO CẤP - SANG TRỌNG</h3></a>
+				</div>
+				<div class="product">
+					<div class="row-slider product-left-section col-slider col-ct-4">
+						<img src="./asset/img/product/pro_poster.jpg" alt="">
+					</div>
+					<div class="row-slider product-right-section col-slider col-ct-6">
+
+						<!-- product 3 -->
+						<div class="prd-section col-ct-3">
+							<div class="img-container">
+								<a href="">
+									<img src="./asset/img/product/pro1.jpg" alt="">
+								</a>
+								<!-- product details -->
+								<div class="prd-details prd-left-details">
+									<p class="prd-details-name">[Mới 100% Full box] Laptop HP 250 G8 2R9H2EA - Intel Core i3</p>
+									<p class="prd-details-price">11.990.000đ</p>
+									<div class="prd-details-guarantee">
+										<h4>Bảo hành:</h4>
+										<p><i class="far fa-check-square"></i>Bảo hành 12 tháng</p>
+										<p><i class="far fa-check-square"></i>miễn phí giao hàng tận nhà</p>
+									</div>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng cho đơn hàng < 5km tính từ cửa hàng laptop88 gần nhất</p>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng (khách hàng chịu phí bảo hiểm hàng hóa nếu có)</p>
+									<div class="status">
+										<h4>Kho hàng:</h4>
+										<p>Còn hàng</p>
+									</div>
+									<span class="p-summary details-sumary">
+										<h4 style="display: inline-block;">Mô tả tóm tắt: </h4>
+										Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+										Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+										Giá rẻ nhất thị trường<br>
+									</span>
+								</div>
+								<!-- end product details -->
+							</div>
+							<a href="" class="p-name">[Mới 100% Full box] Laptop Dell Inspiron 3510 76CCW  - Intel Pentinum </a>
+							<span class="p-summary"> 
+								Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+								<br>
+								Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+								<br>
+								Giá rẻ nhất thị trường<br>
+							</span>
+							<div class="old-price-all">
+								<span class="old-price">14.990.000đ</span>
+								<span class="discount">-21%</span>
+							</div>
+							<span class="new-price">11.990.000</span>
+						</div>
+						
+						<!-- product 2 -->
+						<div class="prd-section col-ct-3">
+							<div class="img-container">
+							<a href="">
+								<img src="./asset/img/product/pro2.jpg" alt="">
+							</a>
+								<!-- product details -->
+								<div class="prd-details">
+									<p class="prd-details-name">[Mới 100% Full box] Laptop HP 250 G8 2R9H2EA - Intel Core i3</p>
+									<p class="prd-details-price">11.990.000đ</p>
+									<div class="prd-details-guarantee">
+										<h4>Bảo hành:</h4>
+										<p><i class="far fa-check-square"></i>Bảo hành 12 tháng</p>
+										<p><i class="far fa-check-square"></i>miễn phí giao hàng tận nhà</p>
+									</div>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng cho đơn hàng < 5km tính từ cửa hàng laptop88 gần nhất</p>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng (khách hàng chịu phí bảo hiểm hàng hóa nếu có)</p>
+									<div class="status">
+										<h4>Kho hàng:</h4>
+										<p>Còn hàng</p>
+									</div>
+									<span class="p-summary details-sumary">
+										<h4 style="display: inline-block;">Mô tả tóm tắt: </h4>
+										Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+										Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+										Giá rẻ nhất thị trường<br>
+									</span>
+								</div>
+								<!-- end product details -->							
+							</div>
+							<a href="" class="p-name">[Mới 100% Full Box] Laptop Asus Zenbook Q408UG- AMD Ryzen 5</a>
+							<span class="p-summary"> 
+								Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+								<br>
+								Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+								<br>
+								Giá rẻ nhất thị trường<br>
+							</span>
+							<div class="old-price-all">
+								<span class="old-price">14.990.000đ</span>
+								<span class="discount">-21%</span>
+							</div>
+							<span class="new-price">11.990.000</span>
+						</div>
+
+						<!-- product 1 -->
+						<div class="prd-section col-ct-3">
+							<div class="img-container">
+								<a href="">
+									<img src="./asset/img/product/pro3.jpg" alt="">
+								</a>
+								<!-- product details -->
+								<div class="prd-details">
+									<p class="prd-details-name">[Mới 100% Full box] Laptop HP 250 G8 2R9H2EA - Intel Core i3</p>
+									<p class="prd-details-price">11.990.000đ</p>
+									<div class="prd-details-guarantee">
+										<h4>Bảo hành:</h4>
+										<p><i class="far fa-check-square"></i>Bảo hành 12 tháng</p>
+										<p><i class="far fa-check-square"></i>miễn phí giao hàng tận nhà</p>
+									</div>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng cho đơn hàng < 5km tính từ cửa hàng laptop88 gần nhất</p>
+									<p class="details-promotion">- với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng (khách hàng chịu phí bảo hiểm hàng hóa nếu có)</p>
+									<div class="status">
+										<h4>Kho hàng:</h4>
+										<p>Còn hàng</p>
+									</div>
+									<span class="p-summary details-sumary">
+										<h4 style="display: inline-block;">Mô tả tóm tắt: </h4>
+										Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+										Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+										Giá rẻ nhất thị trường<br>
+									</span>
+								</div>
+								<!-- end product details -->
+
+							</div>
+							<a href="" class="p-name">[Mới 100% Full box] Laptop HP 250 G8 2R9H2EA - Intel Core i3</a>
+							<span class="p-summary"> 
+								Laptop HP 250 G8 intel core i3 mỏng nhẹ sang trọng. 
+								<br>
+								Cấu hình đủ đáp ứng mọi nhu cầu làm việc học tập. Màn 15.6 Inch lớn
+								<br>
+								Giá rẻ nhất thị trường<br>
+							</span>
+							<div class="old-price-all">
+								<span class="old-price">14.990.000đ</span>
+								<span class="discount">-21%</span>
+							</div>
+							<span class="new-price">11.990.000</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- accessory -->
+			<div class="prd-container">
+				<div class="pro-header">
+					<a href=""><h3>PHỤ KIỆN</h3></a>
+				</div>
+				<div class="accessory">
+					<!-- product 1 -->
+					<div class="accessory-section col-slider col-ct-5">
+						<div class="img-acc-container">
+							<a href="">
+								<img src="./asset/img/product/acc1.jpg" alt="">
+							</a>
+						</div>
+						<a class="acc-name">SSD M.2 Sata 2280 128GB Kingston (Có DRAM)</a>
+						<span class="acc-price">550.000đ</span>
+						<span class="acc-promotion">TẶNG THÊM TỚI 50.000 ĐỒNG TIỀN MẶT - KHI MUA CÙNG RAM PC BẤT KỲ</span>
+					</div>
+					<!-- product 2 -->
+					<div class="accessory-section col-slider col-ct-5">
+						<div class="img-acc-container">
+							<a href="">
+								<img src="./asset/img/product/acc1.jpg" alt="">
+							</a>
+						</div>
+						<a class="acc-name">SSD M.2 Sata 2280 128GB Kingston (Có DRAM)</a>
+						<span class="acc-price">550.000đ</span>
+						<span class="acc-promotion">TẶNG THÊM TỚI 50.000 ĐỒNG TIỀN MẶT - KHI MUA CÙNG RAM PC BẤT KỲ</span>
+					</div>
+					<!-- product 3 -->
+					<div class="accessory-section col-slider col-ct-5">
+						<div class="img-acc-container">
+							<a href="">
+								<img src="./asset/img/product/acc1.jpg" alt="">
+							</a>
+						</div>
+						<a class="acc-name">SSD M.2 Sata 2280 128GB Kingston (Có DRAM)</a>
+						<span class="acc-price">550.000đ</span>
+						<span class="acc-promotion">TẶNG THÊM TỚI 50.000 ĐỒNG TIỀN MẶT - KHI MUA CÙNG RAM PC BẤT KỲ</span>
+					</div>
+					<!-- product 4 -->
+					<div class="accessory-section col-slider col-ct-5">
+						<div class="img-acc-container">
+							<a href="">
+								<img src="./asset/img/product/acc1.jpg" alt="">
+							</a>
+						</div>
+						<a class="acc-name">SSD M.2 Sata 2280 128GB Kingston (Có DRAM)</a>
+						<span class="acc-price">550.000đ</span>
+						<span class="acc-promotion">TẶNG THÊM TỚI 50.000 ĐỒNG TIỀN MẶT - KHI MUA CÙNG RAM PC BẤT KỲ</span>
+					</div>
+					<!-- product 5 -->
+					<div class="accessory-section col-slider col-ct-5">
+						<div class="img-acc-container">
+							<a href="">
+								<img src="./asset/img/product/acc1.jpg" alt="">
+							</a>
+						</div>
+						<a class="acc-name">SSD M.2 Sata 2280 128GB Kingston (Có DRAM)</a>
+						<span class="acc-price">550.000đ</span>
+						<span class="acc-promotion">TẶNG THÊM TỚI 50.000 ĐỒNG TIỀN MẶT - KHI MUA CÙNG RAM PC BẤT KỲ</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end content -->
+	</main>
+</body>
+</html>

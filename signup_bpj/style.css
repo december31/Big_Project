@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+	/* font-family: 'Mochiy Pop P One', sans-serif; */
+	font-family: sans-serif;
+	width: 100vw;
+	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
+	background-image: url(./bg.jpg);
+	background-size: 100%;
+	display: flex;
+	
+}
+
+.container {
+	background-color: #FBF3E4;
+	/* background-color: rgba(255, 255, 255, 0.8);
+	box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); */
+	border-radius: 10px;
+	display: flex;
+	justify-content: flex-start;	
+	align-items: flex-start;
+	position: relative;
+	box-shadow: 0 0 5px;
+}
+
+@keyframes move {
+	from {
+		left: 0;
+	}
+	to {
+		left: 50%;
+	}
+}
+
+@keyframes move-rev {
+	from {
+		left: 50%;
+	}
+	to {
+		left: 0;
+	}
+}
+.container .cover {
+	height: 100%;
+	width: 50%;
+	position: absolute;
+	/* float: left; */
+	top: 0;
+	left: 0;
+	right: auto;
+	z-index: 1;
+	background-color: #2FDD92;
+	border-radius: 10px 0 0 10px;
+	box-shadow: 0 0 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	animation: move-rev ease-in-out 500ms;
+}
+
+.cover h2 {
+	color: #480032;
+	font-size: 35px;
+	text-align: center;
+}
+
+#cover-change {
+	position: fixed;
+	right: 0;
+	z-index: 10;
+	display: none;
+}
+
+#cover-change:checked~.cover {
+	left: auto;
+	border-radius: 0px 10px 10px 0px;
+	box-shadow: 0 0 5px;
+	animation: move ease-in-out 500ms;
+	right: 0;
+}
+
+[for = "cover-change"] {
+	width: auto;
+}
+
+.cover #change {
+	display: block;
+	background-color: #333;	
+	color: #fff;
+	padding: 10px 54px;
+	margin-top: 10px;
+	width: auto;
+	position: relative;
+	transform: translateX(0);
+	font-size: 24px;
+	border-radius: 6px;
+	border: none;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all linear 200ms;
+}
+
+#change:hover {
+	transition: all linear 200ms;
+	color: #333;
+}
+
+
+#change:before {
+	content: "";
+	border-radius: 6px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 100%;
+	background-color: #F5FDB0;
+	transition: ease-in-out 300ms;
+	z-index: -1;
+}
+
+#change:hover:before
+{
+	width: 100%;
+	left: 0;
+	transition: ease-in-out 300ms;
+}
+
+#sign-up,
+#sign-in {
+	max-height: 90%;
+	max-width: 90%;
+	width: 500px;
+	margin: auto;
+	min-height: 100px;
+	display: inline-block;
+	color: #fff;	
+	position: relative;
+	padding: 0 20px 20px 20px;
+	margin-left: 10px;
+}
+
+svg {
+	width: 100px;
+	margin-left: 25px;
+	color: #fff;
+	position: absolute;
+	left: -50px;
+	top: -40px;
+	filter: drop-shadow(0 0 10px #193498);
+}
+
+h1 {
+	text-align: center;
+	padding: 28px;
+	font-size: 35px;
+	letter-spacing: 5px;
+	color:cornflowerblue;
+	text-shadow: 0 0 8px #FFD369;
+	text-transform: uppercase;
+}
+
+input {
+	width: 100%;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #000;
+	font-size: 18px;
+	padding: 4px 10px;
+	margin-bottom: 35px;
+	margin-top: 7px;
+	color: #000;
+	position: relative;
+	caret-color: #000;
+	animation: all linear 200ms;
+}
+
+input:focus {
+	outline: none;
+	border-color: orange;
+	animation: all linear 200ms;
+}
+
+input::placeholder {
+	/* font-family: 'Mochiy Pop P One', sans-serif; */
+	font-size: 14px;
+}
+
+label {
+	width: 100%;
+	font-size: 16px;
+	padding-left: 5px;
+	color: #000;
+	position: relative;
+	display: block;
+}
+
+span {
+	position: absolute;
+    font-family: sans-serif;
+    font-size: 14px;
+    width: 100%;
+    top: 60px;
+    left: 11px;
+    letter-spacing: 0.5px;
+	/* opacity: 0; */
+}
+
+.usn-error,
+.usn-accept,
+.em-error,
+.em-accept{
+	opacity: 0;
+}
+
+.error {
+	color: #FF3333;
+}
+
+.accept {
+	color: #79D70F;
+}
+
+.show {
+	opacity: 1;
+	transition: all linear 300ms;
+	animation-delay: 0;
+}
+
+.agree {
+	font-size: 16px;
+	font-family: sans-serif;
+	color: #000;
+	display: inline-block;
+	margin-left: 30px;
+	margin-bottom: 90px;
+	position: relative;
+}
+
+#terms-accept,
+#remember-accept {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-left: 8px;
+	position: absolute;
+	left: -30px;
+	top: -6px;
+}
+
+#register,
+#sign-in-btn {
+	display: block;
+	background-color: #333;	
+	color: #fff;
+	text-transform: uppercase;
+	padding: 10px 48px;
+	width: auto;
+	position: absolute;
+	left: 50%;
+	bottom: 28px;
+	transform: translateX(-50%);
+	font-size: 24px;
+	/* font-family: 'Mochiy Pop P One', sans-serif; */
+	border-radius: 6px;
+	border: none;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all linear 200ms;
+}
+
+#register:hover,
+#sign-in-btn:hover {
+	transition: all linear 200ms;
+	color: #333;
+	font-size: 25px;
+}
+
+
+#register:before,
+#sign-in-btn:before {
+	content: "";
+	border-radius: 6px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 100%;
+	background-color: #2FDD92;
+	transition: ease-in-out 300ms;
+	z-index: -1;
+}
+
+#register:hover:before,
+#sign-in-btn:hover:before
+{
+	width: 100%;
+	left: 0;
+	transition: ease-in-out 300ms;
+}
+
+@media screen and (max-width: 749px){
+	svg {
+		left: 2px;
+		width: 36px;
+		top: 37px;
+		color: #CCFFBD;
+		filter: drop-shadow(0 0 1px #FFD369);
+	}
+	
+	h1 {
+		font-size: 30px;
+		text-align: right;
+		padding-right: 0;
+	}
+
+	#sign-up {
+		padding: 0 15px 20px 15px;
+	}
+}

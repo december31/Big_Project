@@ -1,0 +1,82 @@
+
+  	.auth-form{
+  		font-weight: 500px;
+  	}
+  	.auth-form_container{
+  		padding: 0 32px;
+  	}
+  	.auth-form_hearder{
+  		display: flex;
+  		align-items:center ;
+  		justify-content: space-between;
+  	}
+  	.auth-form_heading{
+  		font-size: 2.2rem;
+  		font-weight: 400;
+  		
+  	}
+  	.auth-form_switch-btn{
+  		font-size: 1.6rem;
+  		color: red;
+  		cursor: pointer;
+      margin-left: 163px;
+      margin-top: 2px;
+  	}
+  	.auth-form_form{
+  		
+  	}
+  	.auth-form_input{
+  		width: 100%;
+  		height: 40px;
+  		margin-top: 16px;
+  		padding:0 12px;
+  		font-size: 1.1rem;
+  		border: 1px solid #E3D8D8;
+  		border-radius: 2px;
+  		outline: none;
+  	}
+  	.auth-form_input:focus {
+  		border-color: #888 ;
+  	}
+  	.auth-form_aside{
+  		margin-top: 18px;
+  	}
+  	.auth-form_policy-text{
+  		font-size: 1rem;
+      line-height: 1.8rem;
+      text-align: center;
+      padding: 22px 12px;
+  	}
+    .auth-form_text-link{
+      text-decoration: none;
+      color: #F13521;
+    }
+    .auth-form_controls{
+      margin-top: 43px;
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .auth-form_scocials{
+      background: #f5f5f5;
+      padding: 12px 26px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .auth-form_scocials-icon{
+      font-size: 1.8rem;
+    }
+    .auth-form_scocials--facebook{
+       background: linear-gradient(84.06deg, #0088FF -28.62%, #A033FF 36.39%, #FF5C87 98.74%);
+       border: none;
+      color: white;
+    }
+    .fab.fa-facebook-messenger{
+      font-size: 21px;
+    }
+    a.auth-form_policy-link {
+    color: red;
+    }
+    .auth-form_scocials--google.btn.btn--with-icon{
+      background-color: white;
+    }
