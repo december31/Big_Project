@@ -11,8 +11,6 @@ body {
 	min-height: 100vh;
 	align-items: center;
 	justify-content: center;
-	background-image: url(./bg.jpg);
-	background-size: 100%;
 	display: flex;
 }
 
@@ -324,6 +322,10 @@ span {
 	transition: ease-in-out 300ms;
 }
 
+.container form>a {
+	display: none;
+}
+
 @media screen and (max-width: 1023px) {
 	#sign-in h1
 	#sign-up h1 {
@@ -346,7 +348,7 @@ span {
 	}
 	
 	.container {
-		height: 550px;
+		height: 560px;
 	}
 	
 	#sign-up,
@@ -361,7 +363,7 @@ span {
 	#sign-up {
 		display: none;
 	}
-
+	
 	#change-sign-mobile {
 		display: block;
 		position: absolute;
@@ -374,6 +376,7 @@ span {
 		border-right: 4px solid #2FDD92;
 		background-color: #FFD369;
 		border-radius: 0 0 10px 0;
+		border-radius: 10px 0 10px 0;
 		transition: all linear 300ms;
 	}
 	
@@ -381,9 +384,10 @@ span {
 		border-bottom: none;
 		font-size: 30px;
 		color: #FF0000;
+		border-radius: 0 10px 0 10px;
 		transition: all linear 300ms;
 	}
-
+	
 	#change-sign-mobile h1 {
 		border-bottom: 4px solid #2FDD92;
 		display: flex;
@@ -402,4 +406,14 @@ span {
 		font-size: 28px !important;
 		width: 90% !important;
 	}
+
+	.container form>a{
+		display: block;
+		position: absolute;
+		bottom: -20px;
+		right: 30px;
+		color: blue;
+		text-decoration: none;
+		font-size: 20px;
+	}	
 }

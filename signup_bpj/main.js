@@ -222,7 +222,7 @@ var sign_up_form = document.getElementById('sign-up')
 var c = 1
 
 mobile_sign_up.onclick = function() {
-	container.style.height = '630px'
+	container.style.height = '650px'
 	sign_in_form.style.display = 'none'	
 	sign_up_form.style.display = 'block'
 	
@@ -241,9 +241,9 @@ mobile_sign_up.onclick = function() {
 }
 
 mobile_sign_in.onclick = function() {
-	container.style.height = '550px'
+	container.style.height = '560px'
 	sign_in_form.style.display = 'block'	
-	sign_up_form.style.display = 'none'	
+	sign_up_form.style.display = 'none'
 	
 	mobile_sign_up.style.borderBottom = '4px solid #2FDD92'
 	mobile_sign_up.style.borderRight = '4px solid #2FDD92'
