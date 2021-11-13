@@ -69,6 +69,19 @@ body {
 	animation: move-rev ease-out 500ms;
 }
 
+.cover a {
+    position: absolute;
+    top: 20px;
+    /* left: 30px; */
+    font-size: 20px;
+	text-decoration: none;
+	width: 150px;
+}
+
+.cover i {
+	font-size: 30px;
+}
+
 .cover h2 {
 	color: #480032;
 	font-size: 35px;
