@@ -27,449 +27,251 @@
 	<link rel="stylesheet" type="text/css" href=".\base.css">
 	<link rel="stylesheet" href="./asset/css/style.css">
 	<link rel="stylesheet" href="./asset/icon/all.css">
+	<link rel="stylesheet" href="./asset/css/menu.css">
 </head>
 <style >
-	.container-fluid{
-		
-		background-color: #243a76;
-	}
-	.row .t{
-		padding: 0px;
-		margin: 0px;
-	}
-	.row {
-    width: 109%;
-}
-	ul.abc >li{
-		list-style: none;
-		display: inline-block;
-	}
-	ul.abc > li{
-		
-		border-radius: 19px;
-		background-color: #1f3164;
-		height: 37px;
-		line-height: 32px;
-		text-align: center;
-		margin-right: 13px;
-	}
-	.a{
-		width: 200px;
-	}
-	ul.abc li a{
-		font-size: 11px;
-		color: white;
-		width: 50px;
-	}
-	i.gg-thermostat {
-    width: 203px;
-    line-height: 17px;
+	footer .container{
+	    width: 100% !important;
+	    min-width: 1210px !important;
+	    max-width: 1210px !important;
 	}
 
-	ul.abc li a:hover{
-		text-decoration: none;
-	}
-	li.b {
-    width: 130px;
-	}
-
-	li.c {
-    width: 112px;
-	}
-	input.form-control.mr-sm-2 {
-    width:569px;
-    height: 33px;
-    border-radius: 0px;
+	.newleter-text h4 {
+	    font-size: 18px;
+	    font-weight: bold;
+	    color: #333333;
+	    text-transform: uppercase;
     }
+    .newleter-text span {
+    	color: #333333;
+	}
+	.newleter-form input {
+	    width: 480px;
+	    border: 1px solid #e1e1e1;
+	    padding: 10px;
+	    border-radius: 5px;
+	    margin: 3px 0px;
+	    outline: 0;
+	}
+	#footer{
+		background-color: white;
+		overflow: hidden;
+		padding:  20px 0;
+		font-family: 'Roboto', Arial,sans-serif;
+		font-weight: 400;
+	}
 
-	button.btn.btn-success {
-	    margin-left: -80px;
+	.box-footer{
+		float: left;
+		width: 269px;
+		padding-right: 0px;
 	}
-		nav.navbar.navbar-expand-sm.navbar-dark {
-	    padding: 0px 3px 15px 0px;
+	.newleter{
+		margin-top: 20px;
+	    background-color: #e1e1e1;
+	    padding: 27px 0;
+	    box-shadow: inset 0 6px 22px -7px rgb(0 0 0 / 40%);
+	    padding-bottom: 40px;
 	}
-	.dropdown{
-			padding-right: 2px;
-			padding-top: 0.7px;
+	.newleter-form{
+		position: relative;
+		margin-left: 40px;
 	}
-	  .row .a{
-	  	text-align: center;
+	footer .containe{
+		padding-left: 10px;
+		padding-right: 10px;
 	}
-	
-	li.d {
+	footer .container {
+	    width: 100%;
+	    padding-right: 15px;
+	    padding-left: 15px;
+	    margin-right: auto;
+	    margin-left: auto;
+	}
+	.d-flex{
+	 	display: flex!important;;
+	}
+	.showroom-list{
+		float: left;
+		width: 1500px;
+		font-size: 1rem;
+
+	}
+	.box-footer .h-title{
+		text-transform: uppercase;
+		font-size: 25px;
+		margin-bottom: 10px;
+		font-weight: 600;
+	}
+	.ul{
+		margin: 0;
+		padding: 0;
 		list-style: none;
-		display: inline-block;
-		background-color: blue;
 	}
-	@keyframes example {
-  0% {background-color: crimson;}
-  25% {background-color: lightsalmon;}
-  50% {background-color: pink;}
-  100% {background-color: indigo;}
-}
-		li.b {
-		    background-color: crimson;
-		  animation-name: example;
-		  animation-duration: 3s;
-		  animation-iteration-count: infinite;
-		}
-		p {
-		    margin-top: -23px;
-		}
-		a.nav-link.tc {
-		    background-color: red;
-		}
-
-		i {
-		    color: white;
-		}
-		.gg-phone {
-   background-color: white;
-   color: #1f3164;
-   border-radius: 8px;
-   box-sizing: border-box;
-   position: relative;
-   display: block;
-   width: 31px;
-   height: 22px;
-   transform: scale(var(--ggs,1));
-   }
-   	.gg-profile {
-    overflow: hidden;
-    transform: scale(var(--ggs,1));
-    width: 29px;
-    height: 22px;
-    position: relative;
-    background-color: white;
-    color: #1f3164;
+	.box-footer li{
+		margin: 6px 0;
+		display: list-item;
+    	text-align: -webkit-match-parent;
 	}
-		.gg-facebook {
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    transform: scale(var(--ggs,1));
-    width: 25px;
-    height: 23px;
-    background-color: white;
-    border: 1px solid;
-    color: #1f3164;
-    border-radius: 5px;
+	.footer-showroom-container {
+    	background: #fff;
+	}
+	footer .container {
+    	max-width: 720px;
+	}
+	.footer-showroom-container .showroom-list:first-child{
+	    width: 40%;
+	}
+	.footer-showroom-container .showroom-list:nth-child(2) {
+	    width: 40%;
+	}
+	.footer-showroom-container .showroom-list {
+	    width: 20%;
+	    float: left;
+	}
+	.footer-showroom-container .row-title {
+	    font-weight: bold;
+	    border-bottom: 2px solid;
+	    display: inline-block;
+	    padding: 0 20px 4px 0;
+	}
+	footer p {
+	    margin-top: 0;
+	    margin-bottom: 1rem;
+	}
+	.footer-showroom-container li {
+		    padding: 0 15px 0 0;
+		    margin-bottom: 20px;
 		}
-		.col-lg-9 {
-			font-size: 15px;
-		    color: white;
-		    margin-bottom: 10px;
-		}
-
-		a.nav-link {
-		    color: white;
-		}
-
-		a.nav-link.tc {
-		    height: 37px;
-		    padding-right: 10px;
-		    margin-top: 43px;
-		}
-
-		li.nav-item .tc{
-			border-radius: 11px;
-		    margin-right: 5px;
-		}
-
-		li.nav-item.tb {
-		    background-color: #1f3164;
-		    border-radius: 5px;
-		}
-		a.nav-link.tb {
-    border-right: 1px solid;
-		}
-		button.btn.btn-primary.dropdown-toggle {
-    background-color: orange;
-    border: none;
-    border-radius: 0px;
-    color: black;
-		}
-
-		button.btn.btn-success {
-		    background-color: orange;
-		    border-radius: 0px;
-		    height: 33px;
-		    color: black;
-		    height: 33px;
-		    margin-top: 1px;
-		}
-		button.btn.btn-primary.dropdown-toggle {
-      color: black;
-    font-size: 14px;
-		}
-		.submenu{
-			width: 265px;
-			float: left;
-			padding-left: 63px;
-		}
-		.btn.btn-primary.dropdown-toggle:hover .dropdown-menu {
-			opacity: 1;
-			visibility: visible;
-		}
-		div.dropdown-menu.ab{
-			width: 1200px;
-
-		}
-		.nav-link.cuoi
-		{ 	margin-top: 1px;
-    		font-size: 13px;
-    		background-color: #1f3164;
-    		height: 33px;
-		}
-		span.menu--one{
-			font-weight: 650;
-			border-bottom: 2px solid red;
-		}
-		.gg-check{
-			color: black;
-		}
-		.dropdown-item{
-			padding: 5px 77px 5px 5px;
-		}
-		img{
-			width: 100px;
-			/* margin-bottom: 20px; */
-		}
-		.submenu.ab {
-    width: 150px;
-    padding-bottom: 42px;
-    }
-    .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
-    box-shadow: none;
-		}
-		.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
-     color: black; 
-     background-color: #DFBC2E; 
-     border-color: none; 
-		}
-		.btn-primary.focus, .btn-primary:focus {
-    
-     box-shadow: none
-   }
-   .btn.focus, .btn:focus {
-    outline: 0;
-     box-shadow: none; 
-		}
-		.btn-primary:hover {
-    color: black;
-    background-color: #DFBC2E;
-    border-color: none;
-		}
-    /*input*/
-		.modal-dialog.modal-dialog-centered {
-    color: black;
-		}
-		.modal-header .close {
-   			padding: 0px;
-    		margin: -0.5rem -0.5rem -1rem auto;
-		}
-		.span{
-			border-bottom: none;
-		}
-		
+	.footer-showroom-container li b {
+	    display: block;
+	    font-size: 15px;
+	}
+	footer{
+		margin-top: 50px;
+		overflow: hidden;
+	}
+	.container-fluid:nth-child(2){
+		background-color: white;
+	}
 </style>
 <body>
-<div class="container-fluid">
-	<div class="container">
-		<div class="row t">
-			<div class="row">
-				<ul class="abc" style="padding:0px">
-					<li class="a"><a href="">TÌM CỬA HÀNG GẦN NHẤT</a>
-					</li>
-					<li class="b"><a href=""> Khách Cá Nhân</a></li>
-					<li class="b"><a href=""> Khách Doanh nghiệp</a></li>
-					<li class="b"><a href="">Bán hàng - TP HCM</a> </li>
-					<li class="b"><a href=""> Bán hàng - Showroom </a></li>
-					<li class="c"><a href="">Tra cứu bảo hành</a></li>
-					<li class="c"><a href="">In hóa đơn điện tử</a></li>
-					<li class="c"><a href="">Tuyển dụng</a></li>
-				</ul>
-			</div>
-			<div class="row">
-				<div class="col-lg-3">
-					<img style="
-						width:250px;
-						height: 54px;
-						object-fit: cover;	
-					" src="./asset/img/LaptopPro (1).png">
-				</div>
-				<div class="col-lg-9">
-					<ul class="nav">
-					  <li class="nav-item tc">
-					    <a class="nav-link tc" href="#" ><i class="gg-support"></i><p>&nbsp &nbsp &nbsp &nbspXây dựng cấu hình máy tính</p></a>
-					  </li>
-					  <li class="nav-item tc">
-					    <a class="nav-link tc" href="#"><i class="gg-thermostat">&nbsp&nbsp Xây dựng tản nhiệt nước PC</i></a>
-					  </li>
-					  <li class="nav-item tb">
-					    <a class="nav-link tb" href="#"><i class="gg-phone"></i>Mua hàng online
-					    	<br>0971609339</a>
-					  </li>
-					  
-  <button type="button" class=" btn btn-primary" data-toggle="modal"
-  style="width:119px;padding:0px;background-color: #1f3164;box-shadow: none;border: none;">
-  	<a class="nav-link tb" style="padding:0px;text-align:none" href="./signup_bpj/index.html"><i class="gg-profile"></i>
-					    	Đăng nhập<br>Đăng kí</a>
-  </button>
-
-  <!-- The Modal -->
-  <div class="modal fade" id="myModal">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-      
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h3 class="auth-form_heading">Đăng ký</h3>
-          <span class="auth-form_switch-btn" style="border: none">Đăng nhập</span>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        
-        <!-- Modal body -->
-        <div class="modal-body">
-          <div class="auth-form">
-	<div class="auth-form_container">
-	<div class="auth-form_hearder">
-		<!-- <h3 class="auth-form_heading">Đăng ký</h3>
-		<span class="auth-form_switch-btn">Đăng nhập</span> -->
-	</div>
-	<div class="auth-form_form">
-		<div class="auth-form_group">
-			<input type="email" class="auth-form_input" placeholder="Email của bạn">
-		</div>
-		<div class="auth-form_group">
-			<input type="password" class="auth-form_input" placeholder="Mật khẩu của bạn">
-		</div>
-		<div class="auth-form_group">
-			<input type="password" class="auth-form_input" placeholder="Nhập lại mật khẩu">
-		</div>
-	</div>
-	<div class="auth-form_aside">
-		<p class="auth-form_policy-text">
-			Bằng việc đăng kí, ban đã đồng ý với laptoppro về
-			<a href="" class="auth-form_policy-link">Điều khoản dịch vụ&nbsp</a>&<a href="" class="auth-form_policy-link">&nbspChính sách bảo mật</a>
-		</p>
-	</div>
-
-	<div class="auth-form_controls">
-		<button class="btn btn--primaty">ĐĂNG KÍ</button>
-	</div>
-	</div>
-	<div class="auth-form_scocials">
-		<a href="" class="auth-form_scocials--facebook btn btn--with-icon">
-			<i class=" fab fa-facebook-messenger"></i>
-			Kết nối với Messenger
-		</a>
-		<a href="" class="auth-form_scocials--google btn btn--with-icon">
-			<div class="XhfvJd">
-	<svg xmlns="https://www.w3.org/2000/svg";width="22" height="22" viewBox="0 0 48 48" aria-hidden="true" class="L5wZDc">
-		<path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"></path>
-		<path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"></path>
-		<path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24c0 3.55.85 6.91 2.34 9.88l7.35-5.7z"></path>
-		<path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"></path>
-		<path fill="none" d="M2 2h44v44H2z"></path>
-	</svg>
-	Kết nối với Google
-</div>
-			
-		</a>
-	</div>
-</div>
-        </div>
-        
-        <!-- Modal footer -->
-        
-      </div>
-    </div>
-  </div>				 
-	<li class="nav-item tb">
-					    <a class="nav-link " href="#"><i class="gg-facebook"></i>FACEBOOK</a>
-					  </li>
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row ">
+				<div class="row">
+					<ul class="abc" style="padding:0px">
+						<li class="a"><a href="">TÌM CỬA HÀNG GẦN NHẤT</a>
+						</li>
+						<li class="b"><a href=""> Khách Cá Nhân</a></li>
+						<li class="b"><a href=""> Khách Doanh nghiệp</a></li>
+						<li class="b"><a href="">Bán hàng - TP HCM</a> </li>
+						<li class="b"><a href=""> Bán hàng - Showroom </a></li>
+						<li class="c"><a href="">Tra cứu bảo hành</a></li>
+						<li class="c"><a href="">In hóa đơn điện tử</a></li>
+						<li class="c"><a href="">Tuyển dụng</a></li>
 					</ul>
 				</div>
-			</div>
-			<div class="row ">
-				<div class="dropdown">
-  			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-    		Chính sách - Hướng dẫn 
-  			</button>
-  			<div class="dropdown-menu ab" >
-  				<div class="submenu">
-  					<span class="menu--one">HỖ TRỢ KHÁCH HÀNG</span>
-		    		<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspHướng dẫn mua hàng trực tuyến</i></a>
-		    		<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspHướng dẫn thanh toán</i></a>
-		    		<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspHướng dẫn trả góp</i></a>
-		    		<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspTra cứu hóa đơn</i></a>
-		    		<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspGửi yêu cầu bảo hành</i></a>
-		    		<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspGóp ý,khiếu nại</i></a>
-	    		</div>
-	    		<div class="submenu">
-  					<span class="menu--one">CHÍNH SÁCH CHUNG</span>
-  					<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspChính sách chung</i></a>
-  					<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspChính sách bảo mật</i></a>
-  					<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspChính sách giao hàng</i></a>
-  					<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspChính sách chính hãng</i></a>
-  					<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspChính sách doanh nghiệp</i></a>
-	    		</div>
-	    		<div class="submenu">
-  					<span class="menu--one">THÔNG TIN KHIẾU LẠI </span>
-  					<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspSản phẩm khiếu lại</i></a>
-  					<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspThông tin khiếu lại</i></a>
-	    		</div>
-	    		<div class="submenu">
-  					<span class="menu--one">THÔNG TIN CỬA HÀNG</span>
-  					<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspGiới thiệu</i></a>
-  					<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspTuyển dụng</i></a>
-  					<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspTin tức công nghệ</i></a>
-  					<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspLiên Hệ</i></a>
-	    		</div>
-  			</div>
-  		</div>
-  			<div class="dropdown">
-  			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-    		Tìm theo hãng 
-  			</button>
-  			<div class="dropdown-menu ab" style="width:500px">
-  				<div>
-  					<span>HỖ TRỢ KHÁCH HÀNG</span>
-  				</div>
-  				<div class="submenu ab" >
-		    		<a class="dropdown-item ab" href="#"><img src="https://hanoicomputercdn.com/media/brand/asus.jpg"></a>
-	    			<a class="dropdown-item ab" href="#"><img src="https://hanoicomputercdn.com/media/brand/acer.jpg"></a>
-  					
-	    		</div>
-	    		<div class="submenu ab">
-  					<a class="dropdown-item ab" href="#"><img style="width:60px" src="https://hanoicomputercdn.com/media/brand/hp.jpg"></a>
-  					<a class="dropdown-item ab" href="#"><img src="https://hanoicomputercdn.com/media/brand/msi.jpg"></a>
-	    		</div>
-	    		<div class="submenu ab">
-	    			<a class="dropdown-item ab" href="#"><img style="width:60px" src="https://hanoicomputercdn.com/media/brand/dell.jpg"></a>
-	    		</div>
-  			</div>
-  		</div>
-  			
-				<nav class="navbar navbar-expand-sm  navbar-dark">
-				  <form class="form-inline" action="/action_page.php" style="margin-top: 1px;">
-				    <input class="form-control mr-sm-2" type="text" placeholder="Nhập tên sản phẩm, từ khóa cần tìm">
-				    <button class="btn btn-success" type="submit">Search</button>
-				  </form>
-				</nav>
-				<ul class="nav" >
-							<li class="nav-item" style="margin-right:5px ">
-								<a class="nav-link cuoi"  href="#"><i class="gg-data" style="padding-top: 4px;"></i><p style="padding-top:9px ;">&nbsp &nbsp &nbsp&nbsp&nbspTin công nghệ</p></a>
-							</li>
-							<li class="nav-item" >
-								<a class="nav-link cuoi"  href="#"><i class="gg-gift"></i><p>&nbsp&nbsp &nbsp &nbsp &nbspKhuyến mãi</p></a>
-							</li>
+				<div class="row">
+					<div class="col-lg-3 ">
+						<img style="margin-bottom: 20px;" class="logo"src="./asset/img/LaptopPro (1).png">
+					</div>
+					<div class="col-lg-9">
+						<ul class="nav" style="font-size:14px">
+						  <li class="nav-item tc">
+							<a class="nav-link tc" href="#" ><i class="gg-support"></i><p>&nbsp &nbsp &nbsp &nbspXây dựng cấu hình máy tính</p></a>
+						  </li>
+						  <li class="nav-item tc">
+							<a class="nav-link tc" href="#"><i class="gg-thermostat">&nbsp&nbsp Xây dựng tản nhiệt nước</i></a>
+						  </li>
+						  <li class="nav-item tb">
+							<a class="nav-link tb" href="#"><i class="gg-phone"></i>Mua hàng online
+								<br>0971609339</a>
+						  </li>
+						  
+	  <button type="button" class=" btn btn-primary" data-toggle="modal"
+	  style="width:119px;padding:0px;background-color: #1f3164;box-shadow: none;border: none;">
+		  <a class="nav-link tb" style="padding:0px;text-align:none" href="./signup_bpj/index.html"><i class="gg-profile"></i>
+								Đăng nhập<br>Đăng kí</a>
+	  </button>
+	
+	  <li class="nav-item tb">
+							<a class="nav-link " href="#"><i class="gg-facebook"></i>FACEBOOK</a>
+						  </li>
 						</ul>
+					</div>
+				</div>
+				<div class="row ">
+					<div class="dropdown">
+				  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+				Chính sách - Hướng dẫn 
+				  </button>
+				  <div class="dropdown-menu ab" >
+					  <div class="submenu">
+						  <span class="menu--one">HỖ TRỢ KHÁCH HÀNG</span>
+						<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspHướng dẫn mua hàng trực tuyến</i></a>
+						<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspHướng dẫn thanh toán</i></a>
+						<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspHướng dẫn trả góp</i></a>
+						<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspTra cứu hóa đơn</i></a>
+						<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspGửi yêu cầu bảo hành</i></a>
+						<a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspGóp ý,khiếu nại</i></a>
+					</div>
+					<div class="submenu">
+						  <span class="menu--one">CHÍNH SÁCH CHUNG</span>
+						  <a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspChính sách chung</i></a>
+						  <a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspChính sách bảo mật</i></a>
+						  <a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspChính sách giao hàng</i></a>
+						  <a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspChính sách chính hãng</i></a>
+						  <a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspChính sách doanh nghiệp</i></a>
+					</div>
+					<div class="submenu">
+						  <span class="menu--one">THÔNG TIN KHIẾU LẠI </span>
+						  <a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspSản phẩm khiếu lại</i></a>
+						  <a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspThông tin khiếu lại</i></a>
+					</div>
+					<div class="submenu">
+						  <span class="menu--one">THÔNG TIN CỬA HÀNG</span>
+						  <a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspGiới thiệu</i></a>
+						  <a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspTuyển dụng</i></a>
+						  <a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspTin tức công nghệ</i></a>
+						  <a class="dropdown-item" href="#"><i class="gg-check">&nbsp&nbsp&nbsp&nbspLiên Hệ</i></a>
+					</div>
+				  </div>
+			  </div>
+				  <div class="dropdown">
+				  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+				Tìm theo năm 
+				  </button>
+				  <div class="dropdown-menu ab" style="width:500px">
+					  <div>
+						  <a href="./developing.html">bấm vào đây</a>
+					  </div>
+				  </div>
+			  </div>
+				  
+					<nav class=" mobile-search navbar navbar-expand-sm  navbar-dark ">
+					  <form class="form-inline" action="/action_page.php" style="margin-top: 1px; width: 100%;">
+						<input class="form-control mr-sm-2" type="text" placeholder="Nhập tên sản phẩm, từ khóa cần tìm">
+						<button class="btn btn-success" type="submit">Search</button>
+					  </form>
+					</nav>
+					<ul class="nav" >
+								<li class="nav-item" style="margin-right:5px ">
+									<a class="nav-link cuoi"  href="#"><i class="gg-data" style="padding-top: 4px;"></i><p style="padding-top:9px ;">&nbsp &nbsp &nbsp&nbsp&nbspTin công nghệ</p></a>
+								</li>
+								<li class="nav-item" >
+									<a class="nav-link cuoi"  href="#"><i class="gg-gift"></i><p>&nbsp&nbsp &nbsp &nbsp &nbspKhuyến mãi</p></a>
+								</li>
+							</ul>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
+
+
+
+
+
 	<div class="main">
 		<!-- slider -->
 		<div id="slider">
@@ -491,13 +293,41 @@
 				<div class="slider-contact-section col-slider col-sd-6"><img src="./asset/img/slider/slider-contact.png" alt=""></div>
 			</div>
 			<div class="company row-slider">
-				<div class="company-section"><img src="./asset/img/slider/acer.png" alt=""></div>
-				<div class="company-section"><img src="./asset/img/slider/dell.png" alt=""></div>
-				<div class="company-section"><img src="./asset/img/slider/hp.png" alt=""></div>
-				<div class="company-section"><img src="./asset/img/slider/lenovo.png" alt=""></div>
-				<div class="company-section"><img src="./asset/img/slider/lg.png" alt=""></div>
-				<div class="company-section"><img src="./asset/img/slider/macbook.png" alt=""></div>
-				<div class="company-section"><img src="./asset/img/slider/msi.png" alt=""></div>
+				<div class="company-section">
+					<a href="./acer/index.html">
+						<img src="./asset/img/slider/acer.png" alt="">
+					</a>
+				</div>
+				<div class="company-section">
+					<a href="./dell/index.html">
+						<img src="./asset/img/slider/dell.png" alt="">
+					</a>
+				</div>
+				<div class="company-section">
+					<a href="./hp/index.html">
+						<img src="./asset/img/slider/hp.png" alt="">
+					</a>
+				</div>
+				<div class="company-section">
+					<a href="./lenovo/index.html">
+						<img src="./asset/img/slider/lenovo.png" alt="">
+					</a>
+				</div>
+				<div class="company-section">
+					<a href="./lg/index.html">
+						<img src="./asset/img/slider/lg.png" alt="">
+					</a>
+				</div>
+				<div class="company-section">
+					<a href="./macbook/index.html">
+						<img src="./asset/img/slider/macbook.png" alt="">
+					</a>
+				</div>
+				<div class="company-section">
+					<a href="./msi/index.html">
+						<img src="./asset/img/slider/msi.png" alt="">
+					</a>
+				</div>
 			</div>
 		</div>
 		<div class="content">
@@ -1396,11 +1226,11 @@
 				</div>
 			</div>
 			<!-- accessory -->
-			<div class="prd-container">
+			<div class="prd-container row-slider">
 				<div class="pro-header">
 					<a href=""><h3>PHỤ KIỆN</h3></a>
 				</div>
-				<div class="accessory">
+				<div class="accessory row-slider">
 					<!-- product 1 -->
 					<div class="accessory-section col-slider col-ct-5">
 						<div class="img-acc-container">
@@ -1458,8 +1288,173 @@
 					</div>
 				</div>
 			</div>
+
+			<!-- FOOTTER -->
+			<div style="background-color: transparent;" class="container-fluid">
+				<footer style="padding-bottom: 50px">
+					<div class="newleter">
+						<div class="container d-flex align-item-center">
+							<div class="newleter-text">
+								<h4>Kênh thông tin</h4>
+								<span>Mời bạn nhập email để nhận những thông tin khuyến mại mới nhất</span>
+							</div>
+							<form action="" class="newleter-form">
+								<input id="email_newsletter" type="text" placeholder="Nhập email của bạn ">
+								<span id="now_submit" class="newleter-btn"><i class="fas fa-long-arrow-alt-right"></i></span>
+							</form>
+						</div>
+					</div>
+					<div id="footer">
+						<div class="container">
+							<div class="box-footer">
+								<h3 class="h-title">THÔNG TIN CÔNG TY</h3>
+								<ul class="ul">
+									<li>Laptoppro.vn</a> </li>
+									<li> CÔNG TY CỔ PHẦN áasas GROUP VIỆT NAM </li>
+								  <li> Số 28/2/49/53 Đức Giang, Phường Thượng Thanh, Quận Long Biên, Thành phố Hà Nội, Việt Nam </li>
+									<li> SĐT: 012.3456.9999 - Email: contact@laptoppro.vn </li>
+									<li> Website: laptoppro.vn </li>
+									<li> Mã số doanh nghiệp: 0108529423, cấp lần đầu ngày 28/11/2018</li>
+									<li> Sở KHĐT TP. Hà Nội cấp </li>
+								</ul>
+							</div>
+							<div class="box-footer">
+								<h3 class="h-title">VỀ LAPTOPPRO.VN</h3>
+								<ul class="ul">
+									<li>Giới thiệu chung</a> </li>
+									<li>Tuyển dụng</a> </li>
+									<li> Chăm sóc khách hàng </li>
+									<li> * Hotline: 0247.106.9999 </li>
+									<li> * Thời gian: 24/7 </li>
+									<li> * Email: contact@laptoppro.vn </li>
+									<li> Liên hệ </li>
+								  <li><img style="height:50px" src="images/baitaplon.png"></li>
+								</ul>
+							</div>
+							<div class="box-footer">
+								<h3 class="h-title">CHÍNH SÁCH</h3>
+								<ul class="ul">
+									<li>Chính sách mua hàng từ xa</li>
+									<li>Chính sách đặt cọc sản phẩm</li>
+									<li>Chính sách giao nhận - đổi trả</li>
+									<li>Chính sách bảo hành</li>
+									<li>Chính sách bảo mật thông tin </li>
+									<li>Thỏa thuận sử dụng và quy định giao dịch chung </li>
+								</ul>
+							</div>
+							<div class="box-footer">
+								<h3 class="h-title">THANH TOÁN</h3>
+								<ul class="ul">
+								  <li> Thanh toán trực tuyến (Internet Banking) </li>
+									<li> Thanh toán khi nhận hàng (COD) </li>
+								</ul>
+							 </div>
+						</div>
+					</div>
+				
+				
+				
+					<div class="footer-showroom-container">
+						<div class="container clearfix">
+							<div class="showroom-list">
+								<p class="row-title"> HỆ THỐNG CỬA HÀNG LAPTOPPRO </p>
+				
+								<div style="display: flex; justify-content: space-between;">
+									
+									<ul class="ul">
+										<li>
+											<b>Laptoppro Hà Nội</b>
+											<span>125 Trần Đại Nghĩa - Quận Hai Bà Trưng (012.3456.9999 Máy lẻ 220) - Zalo: 035.2162.588 - Làm việc 7h - 21h</span>
+										</li>
+										<li>
+											<b>Laptoppro Hà Nội</b>
+											<span>LK3C5 Nguyễn Văn Lộc - Hà Đông (đầu Nguyễn Trãi 200m rẽ vào) - Máy lẻ 222 - Zalo: 035.2162.488 - Làm việc: 8h - 21h
+											</span>
+										</li>
+										<li>
+											<b>Laptoppro Hà Nội</b>
+											<span>94 Trần Vỹ - Quận Cầu Giấy (012.4567.9999 Máy lẻ 221) - Zalo: 0911.042.665 - Làm việc 8h - 21h</span> 
+										</li>
+										<li>
+											<b>Laptoppro Hà Nội</b>
+											<span>277 Nguyễn Văn Cừ - Quận Long Biên (012.3456.9999 số máy lẻ 223) - Zalo: 012.3456.9999- Làm việc 8h - 21h</span>
+										</li>
+									</ul>
+				
+				
+									<ul class="ul">
+										<li>
+											<b>Laptoppro TP HCM</b>
+											<span>817A Kha Vạn Cân, P. Linh Tây, Q. Thủ Đức (012.3456.9999 Máy lẻ 410) - Zalo: 0352.162.788 Làm việc: 8h - 18h</span>
+										</li>
+										<li>
+											<b>Laptoppro TP HCM</b>
+											<span>63 Nguyễn Thiện Thuật, Quận 3 (012.3456.9999 số máy lẻ 225) - Zalo: 0352.162.788 - Làm việc: 8h - 18h</span>
+										</li>
+									   <li>
+											<b>Laptoppro Thái Nguyên</b>
+											<span>45 Lương Ngọc Quyến - Điện thoại: 0356.789.228</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="showroom-list">
+								<p class="row-title"> HỆ THỐNG TTBH 88 </p>
+								<div style="display: flex; justify-content: space-between;">
+								<ul class="ul">
+									<li>
+										<b>Trung tâm bảo hành 1</b>
+										<span>40 Trần Đại Nghĩa - Hai Bà Trưng - Hà Nội (024.7106.9999 số máy lẻ 310) - Làm việc: T2-CN: 8h30-19h30 </span>
+									</li>
+									<li>
+										<b>Trung tâm bảo hành 2</b>
+										<span>117 Lương Thế Vinh - Thanh Xuân - Hà Nội (024.7106.9999 số máy lẻ 311) - Làm việc: T2-CN: 8h30-19h30 </span>
+									</li>
+									<li>
+										<b>Trung tâm bảo hành 3</b>
+										<span>135 Chùa Láng - Đống Đa - Hà Nội (024.7106.9999 số máy lẻ 312) - Làm việc: T2-CN: 8h30-19h30</span>
+									</li>
+								  <li>
+										<b>Trung tâm bảo hành 4</b>
+										<span>106 Hồ Tùng Mậu - Cầu Giấy - Hà Nội (024.7106.9999 số máy lẻ 313) - Làm việc: T2-CN: 8h30-17h30</span>
+									</li>
+								</ul>
+								  <ul class="ul">
+									  <li>
+										<b>Trung tâm bảo hành 5</b>
+										<span>63 Nguyễn Thiện Thuật - Quận 3 - TP HCM (024.7106.9999 số máy lẻ 225) - Zalo: 0902.176.788 - Làm việc: 8h30-18h </span>
+									</li>
+									  <li>
+										<b>Trung tâm bảo hành 6</b>
+										<span>817A Kha Vạn Cân, P. Linh Tây, Q. Thủ Đức (024.7106.9999 số máy lẻ 410) - Zalo: 0902.176.788 - Làm việc: 8h30-18h </span>
+									</li>
+								</ul>
+								</div>
+							</div>
+							<div class="showroom-list">
+								<p class="row-title"> HỆ THỐNG SKIN PRO </p>
+				
+								<ul class="ul">
+									<li>
+										<b>SkinPro 1 - Dán Skin</b>
+										<span>71A Lê Thanh Nghị, Hà Nội - Điện thoại: 024.7106.9999 số máy lẻ 224 - Làm việc: 8h - 21h</span>
+									</li>
+									  <li>
+										<b>SkinPro 2 - Dán Skin</b>
+										<span>14 Xuân Thủy, Cầu Giấy, Hà Nội - Điện thoại: 024.7106.9999 số máy lẻ 411 - Làm việc: 8h - 21h</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>   
+				</footer>
+				</div>
+				<div class="clear"></div>
 		</div>
+		<div class="clear"></div>
 		<!-- end content -->
 	</div>
+</div>
+
 </body>
 </html>

@@ -8,6 +8,10 @@
 	box-sizing: border-box;
 }
 
+.clear {
+	clear: both;
+}
+
 body {
 	height: inherit;
 	background-color: #f8f9fa;
@@ -494,6 +498,7 @@ main::after {
 	
 	.accessory .accessory-section {
 		display: block;
+		margin-bottom: 10px;
 		width: 33.33333% !important;
 	}
 }
