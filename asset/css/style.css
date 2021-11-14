@@ -9,6 +9,7 @@
 }
 
 body {
+	height: inherit;
 	background-color: #f8f9fa;
 	font-family: 'Roboto',Arial,sans-serif;
 }
@@ -70,6 +71,13 @@ body {
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
+	height: inherit;
+}
+
+main::after {
+	content: "";
+	display: block;
+	clear: both;
 }
 
 #slider {
