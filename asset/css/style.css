@@ -76,6 +76,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	height: inherit;
+	max-width: 1367px;
 }
 
 main::after {

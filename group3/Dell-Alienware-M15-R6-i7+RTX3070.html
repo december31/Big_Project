@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dell-Alienware-M15-R6-i7+RTX3070</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style >
+	/*chung*/
+	ul ,li, a {
+    	list-style: none;
+	}
+	.row{
+		padding:0;
+		margin:0;
+	}
+	body{
+		background-color:#E3E3E3;
+		position: relative;
+		margin: 0 ;
+	}
+	.container{
+		background-color: white;
+		width: 100%;
+		position: relative;
+		margin-bottom: 20px;	
+	}
+	p{
+		font-size: 18px;
+	}
+	a:hover{
+		text-decoration: none;
+	}
+	/*bar*/
+	.nav{
+		width: 100%;
+		padding-left:8%;
+		background-color:#E3E3E3;
+		margin:10px 0;
+	}
+	.nav li{
+		border:  1px solid orange;
+		margin-left:1%;
+		background-color: orange;
+		
+	}
+	.nav li a{
+		color: white;
+	}
+	.nav li a:hover{
+		color:black;
+		
+	}
+	/**/
+	h2{
+		font-size: 20px;
+		border-bottom: 0.5px solid black;
+		margin:10px;
+		width: 100%;
+		padding-bottom: 10px;
+	}
+	img{
+		float: left;
+		padding:20px;
+	}
+	/**/
+	.gia,.discount {
+		color:red;
+		
+	}
+	.chu{
+		font-weight: bold;
+		margin-right: 10px;
+	}
+	.giagoc{
+		text-decoration: line-through;
+		margin-right: 10px;
+	}
+	
+	.another-gia{
+		color: black;
+		font-weight: bold;
+		text-decoration: none;
+	}
+	.button1{
+		color: white;
+		background-color: orange;
+		display:block;
+		border: 2px solid orange;
+		padding:5px 0;
+		margin:5px;
+		border-radius:5px;
+		text-align: center;
+		position: relative;
+		height: 90px;
+		width: 180px;
+		font-size:14px;
+	}
+	.button1:hover{
+		text-decoration: none;
+		color:black;
+		background-color: white;	
+	}
+	/**/
+	label{
+		margin-right: 30px;
+		
+	}
+	.form-inline{
+		margin-bottom: 10px;
+	}
+	.form-inline a{
+		border:2px solid  #FDA805;
+		color :black;
+		margin-right: 10px;
+	}
+	.form-inline a:hover{
+		font-weight: bolder;
+		text-decoration: none;
+	}
+	/**/
+	.khuyenmai1 p{
+		margin-bottom: -1%;
+	}
+	.bang label{
+		background-color: red;
+		font-size: 20px;
+		width: 100%;
+		color:white;
+		padding-left: 10px;
+
+	}
+	.bang {
+		border: 0.5px ridge black;
+		width: 100%;
+		margin-top:10px;
+		padding:0; 
+
+	}
+	.bang li{
+		padding-left: 5px;
+	}
+	/**/
+	.content{
+		margin-left: 2.3%;
+		padding-left:5%;
+		padding-right: 1.5%;
+	}
+	/**/
+	.tc1{
+		border-bottom:1px solid #15afb2;
+		padding:0;
+		width: 100%;
+	}
+	.tc1 p{
+		font-size: 12px;
+		font-weight: normal;
+	}
+	.tc1 li{
+		font-size: 14px;
+		font-weight: bold;
+	}
+	/**/
+	 h3{
+		border-bottom: 2px solid orange;
+		line-height: 40px;
+		font-size:20px;
+		padding:0;
+		display:inline-block;
+	}
+	/**/
+	.tt1{
+		text-align: center;
+	}
+	.tt3{
+		color: red;
+		font-style: italic;
+	}
+	/**/
+	.button {
+	  background-color: orange;
+	  border: none;
+	  color: white;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	  margin-left: 30%;
+	  margin-top: 20px;
+	  margin-bottom:20px;
+	  width: 17%;
+	  text-transform: uppercase;
+	  
+	}
+	.button:hover{
+		text-decoration: none;
+		background-color: white;
+		color: orange;
+		border:1px solid orange;
+	}
+	.thongtin4 img{
+		float: left;
+	}
+	.thongtin2 img{
+		float: none;
+
+	}
+	.thongtin2 h2{
+		border: none;
+		font-weight: bold;
+		font-size: 24px;
+	}
+	.thongtin3 .row{
+		border-bottom: 1px dotted black;
+	}
+	input{
+		font-size: 20px;
+		margin-left: 50%;
+		padding:0 20px;
+	}
+	.nav.menu--ttmay
+	{
+		width: 44%;
+	}
+	.nav-item.item_menu--ttmay{
+		border: none;
+		
+		background: none;
+	}
+	.nav-link.link_menu--ttmay{
+		color: #555555;
+		padding: 0px;
+	}
+
+</style>
+</head>
+<body>
+	<div class="row">
+				<ul class="nav menu--ttmay">
+							<li class="nav-item item_menu--ttmay" >
+								<a class="nav-link link_menu--ttmay" href="../index.html">Trang chủ ></a>
+							</li>
+							<li class="nav-item item_menu--ttmay">
+								<a class="nav-link link_menu--ttmay" href="#">Máy tính sách tay ></a>
+							</li>
+							<li class="nav-item item_menu--ttmay">
+								<a class="nav-link link_menu--ttmay" href="#">Laptop HP</a>
+							</li>
+						</ul>
+	</div>
+<div class="row">
+	<div class="container col-lg-10">
+		
+		<div class="row">
+			<h2>[Mới 100% Full Box] Laptop Dell Alienware M15 R6 70262923 - Intel Core i7</h2>
+			<div class="left col-md-6 col-lg-6">
+				<div class="row"><img style="width:90%;margin-left:5%;"  src="https://laptop88.vn/media/product/6818_203102.jpg"></div>
+				<div class="row"><img style="width:90%;margin-left:5%;" src="https://laptop88.vn/media/product/6818_al3.png"></div>
+				<div class="row"><img style="width:90%;margin-left:5%;" src="https://laptop88.vn/media/product/6818_al5.png"></div>
+			</div>
+			<div class="right col-md-6 col-lg-6">
+				<div class="row">
+					<h1 class="gia">64.990.000Đ</h1>	
+				</div>
+				<div class="row">
+					<p class="chu">Giá gốc: </p><p class="giagoc"> 67.000.000 </p><p class="discount"> -3%</p>
+				</div>
+				<div class="row">
+					<p>Laptop gaming Alienware chính hãng cao cấp, LED RGB hầm hố, cấu hình cực mạnh. Chip i7 11800H, card RTX 3070 6GDDR6, màn hình 240hz, RAM 32GB, SSD 1TB NVMe</p>
+				</div>
+				<div class="row">
+					
+					<li class="another-all"><a href="Legion5Pro2021-R7-5800H+RTX3060.html" class="button1">Legion 5 Pro 2021 - R7 5800H + RTX 3060<br><span class="another-gia"> 41.990.000 VNĐ</span></a></li>
+					<li class="another-all"><a href="AsusROGR75800H+RTX3050.html" class="button1">Asus ROG R7 5800H + RTX 3050<br><span class="another-gia"> 27.590.000 VNĐ</span></a></li>
+					<li class="another-all"><a href="Laptop-Lenovo-Legion7-16ACHg6-82N60039VN-AMD Ryzen9.html" class="button1">Laptop-Lenovo-Legion7-16ACHg6-82N60039VN-AMD Ryzen9<br><span class="another-gia"> 64.990.000 VNĐ</span></a></li>
+					<li class="another-all"><a href="AsusTUF-Gaming-FX506HM-i5+RTX.html" class="button1">Asus TUF Gaming FX506HM - i5 + RTX3050<br><span class="another-gia"> 28.990.000 VNĐ</span></a></li>
+					<li class="another-all"><a href="AsusTUF-Gaming-FA506QM-R7+RTX3060.html" class="button1">Asus TUF Gaming FA506QM - R7 + RTX 3060<br><span class="another-gia"> 31.290.000 VNĐ</span></a></li>
+					<li class="another-all"><a href="Dell-Alienware-M15-R6-i7+RTX3070.html" class="button1">Dell Alienware M15 R6 - i7 + RTX 3070<br><span class="another-gia"> 64.490.000 VNĐ</span></a></li>
+					<li class="another-all"><a href="Legion7-R9-5900HX+RTX3080.html" class="button1">Legion 7 - R9 5900HX + RTX 3080<br><span class="another-gia"> 76.990.000 VNĐ</span></a></li>
+				</div>
+				<div class="form-group">
+						<div class="form-inline ">
+							<label class="left" >CPU: </label>
+							<a href="">Intel Core i7 11800H</a>
+						</div>
+							
+						<div class="form-inline ">
+							<label class="">RAM: </label>
+							<a href="">RAM 32GB DDR4</a>
+							
+						</div>
+						<div class="form-inline">
+							<label>Ổ cứng: </label>
+							<a href="">SSD 1TB NVMe</a>
+						</div>
+						<div class="form-inline">
+							<label>Card đồ họa: </label>
+							<a href="">Nvidia RTX 3070 8GDDR6</a>
+
+						</div>
+						<div class="form-inline">
+							<label>Màn hình: </label>
+							<a href="">15.6 Inch 2K 240Hz</a>
+						</div>
+					</div>	
+				<div class="khuyenmai1">
+				<div class="row">
+					<p>✅Bảo hành 12 tháng Laptop88</p>
+				</div>
+				<div class="row">
+					<p>✅ MIỄN PHÍ GIAO HÀNG TẬN NHÀ</p>
+				</div>
+				<div class="row">
+					<p>- Với đơn hàng < 4.000.000 đồng: Miễn phí giao hàng cho đơn hàng < 5km tính từ cửa hàng Laptop88 gần nhất</p>
+					<p>- Với đơn hàng > 4.000.000 đồng: Miễn phí giao hàng (khách hàng chịu phí bảo hiểm hàng hóa nếu có)</p>
+				</div>
+				</div>
+			
+			
+				<div class="row">	
+				<ul  class="bang">
+					<label class="khuyenmai" >Khuyến mại</label>	
+					<li>✔<a href="">Thẻ Gold Member - ƯU ĐÃI GIÁ TRỊ</a><span style="color:red" >1.290.000 đ</span></li>
+					<li>✔<a href="">Miễn phí dán Skin mặt lưng Laptop - sử dụng tại các cơ sở Skin88</a> <span style="color:red">180.000 đ</span>
+					  <br> Dán vỏ Laptop, điện thoại theo hình ảnh khách hàng tùy chọn</li>
+					<li>✔<a href="">Balo laptop chống sốc BL88 hoặc Túi xách Laptop88</a><span style="color:red"> 295.000 đ</span></li>
+					<li>✔<a href="">Chuột không dây Office</a><span style="color:red">   159.000 đ</span></li>
+					<li>✔<a href="">Voucher tặng 20%, tối đa 300.000vnđ khi mua balo, cặp túi bất kỳ</a></li>
+					<li>✔<a href="">GIẢM GIÁ 30%, tối đa 600.000vnđ khi mua Dock Type C Dell hoặc HP</a><br>
+                         - Docking Dell TB16 + kèm củ sạc 130W<br>
+                         - Docking Dell D6000 + kèm củ sạc 130W<br>
+                         - Bộ chuyển đổi HP USB-C Travel Dock</li>
+				</ul>
+				<p>Hotline tư vấn:<span style="color: #26CD4D;">0999.999.999</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+			
+	<div class="content row col-lg-11">
+		<div class=" col-lg-9 left">
+			<div class="container">
+				<div class="thongtin1">
+					<h3>Đặc điểm nổi bật</h3>
+					<ul class="thongtincon1" style="font-size: 18px;">
+						<li class="tt1"><h1>Asus TUF A15 Ryzen 7 5800H - FA506QM-HN016T
+Siêu bền - Tản mát - Pin cực trâu - Không ngại chiến game và làm đồ họa 3D nặng</h1> </li>
+			           
+			           	<li class="tt2">Laptop Asus TUF FA506QM-HN016T là sản phẩm laptop gaming cực HOT của thương hiệu laptop Asus. So với những sản phẩm laptop/máy tính xách tay cùng phân khúc laptop 30 triệu, Asus TUF F15 Ryzen 7 5800H này sở hữu nhiều ưu điểm vượt trội như:</li>
+			           	<li class="tt3">- Sở hữu cấu hình cực khủng gồm: chip AMD Ryzen 7-5800H, card rời RTX 3060 6GDDR6 sẵn sàng chiến mượt mọi tựa game HOT. RAM 16GB, SSD 512GB NVMe giúp bạn xử lý tốt nhiều công việc cùng lúc, khởi động máy, load game nặng trong tích tắc </li>
+			           	<li class="tt3">- Thiết kế cực cool ngầu với những họa tiết phay xước nổi bật và vỏ kim loại chắc chắn, bền bỉ đạt chuẩn quân sự, bất chấp mọi sự va đập </li>
+			           	<li class="tt3">- Bộ tản nhiệt chất lừ với 2 quạt, 4 ống dẫn nhiệt, 3 ống tản nhiệt giúp hệ thống luôn mát, nhiệt độ luôn được giữ ở mức tối ưu nhất </li>
+			           	
+			           	<li class="tt5"><a href="#" class="button">liên hệ ngay với<br> nhân viên tư vấn </a></li>
+					</ul>
+				</div>	
+				<div class="thongtin2">
+					<h2>Asus TUF A15 Ryzen 7 5800H có cấu hình cực khủng, không ngại bất kỳ tựa game nặng hay đồ họa 3D khó nhằn nào</h2>
+					<img style="width:90% ;" src="https://laptop88.vn/media/product/6818_dell_alienware_m15_r6_70262923_i7_11800h_1_4ce0c5daddac4889a967b9127aa3951b_grande.png">
+					<p>Asus TUF A15 2021 được trang bị chip AMD Ryzen 7 5800H có 8 nhân 16 luồng và xung nhịp tối đa lên tới 4.45 Ghz cho sức mạnh đơn nhân và đa nhân cực khỏe, có thể chiến sung mọi tựa game nặng HOT nhất hiện nay như: GTA 5, Far Cry, Apex Legends, CyberPunk...ở high setting trở lên.<br>
+
+Kết hợp với đó là card đồ họa rời RTX 3060 với công nghệ Ray Tracing không chỉ mang đến hiệu năng chơi mọi tựa game nặng cực khỏe ở max setting, tái hiện đồ họa tốt hơn card GTX khi chơi game đồ họa phức tạp mà còn sở hữu khả năng đổ bóng, khử răng cưa mượt mà để làm đồ họa 3D chuyên nghiệp như thiết kế nội thất, công trình, dựng phim nhanh mượt trên 3ds Max, SketchUp... <br>
+
+Bên cạnh đó, laptop gaming Asus TUF A15 Ryzen 7 5800H còn có sẵn RAM 16GB dung lượng cực lớn cho khả năng đa nhiệm mượt mà và ổ cứng SSD 512GB NVMe tốc độ cao cho khả năng khởi động mọi ứng dụng nhanh chóng chỉ trong vài tích tắc, kể cả những ứng dụng nặng. 
+ </p>
+					<img style="width:90% ;" src="https://laptop88.vn/media/product/6818_203102.jpg">
+					<p>Asus TUF FA506QM - HN016T sở hữu màu đen Graphite đậm mạnh mẽ, kết hợp với các nét phay xước trên thân máy được cắt gọt gọn gàng, tinh tế, bóng bẩy và thiết kế dạng tổ ong ở phần mặt đế không chỉ giúp tăng độ bám mà còn tạo điểm nhấn, tăng thêm độ cool ngầu và chuyên nghiệp cho máy.<br>
+
+Đặc biệt, máy được làm từ vỏ kim loại có độ bền đạt chuẩn quân sự, có khả năng chống sốc, chống chịu va đập, nhiệt độ, áp suất cực tốt nên bạn có thể thoải mái mang máy đi khắp nơi để combat mà không sợ rơi vỡ. </p>
+				    <h2>Legion Lenovo với tản nhiệt Coldfront 3.0</h2>
+				    <img style="width:90% ;" src="https://laptop88.vn/media/product/6818_al3.png";>
+				    <p>Chiếc Lenovo gaming 2021 này được thiết kế với khe tản nhiệt lớn hơn và hệ thống thông gió hiệu suất cao so với các phiên bản tiền nhiệm. Bề mặt tản nhiệt bằng đồng cũng được mở rộng tới 82% so với trước đây. kết hợp cùng đó là hệ thống quản lý nhiệt Lenovo Legion Coldfront 3.0 có thể tăng luồng khí lưu thông thêm 18%, giúp tản nhiệt tốt hơn và giảm ồn hiệu quả, qua đó giúp duy trì nhiệt độ hệ thống chiếc máy tính Lenovo này ở mức tối ưu.
+ </p>
+				        
+				        <h2>Asus TUF A15 Ryzen 7 5800H cho trải nghiệm hình ảnh cực mượt mà, sắc nét và sống động</h2>
+				        <img style="width:90% ;" src="https://laptop88.vn/media/product/6818_al5.png">
+				        <p>Bạn sẽ có những giây phút chiến game, làm việc thật đã mắt trên chiếc TUF A15 RTX 3060 nhờ màn hình rộng 15.6 inch viền siêu mỏng, độ phân giải Full HD sắc nét và tấm nền IPS cao cấp cho hình ảnh trên game sống động, rực rỡ và cực kỳ chân thực ở nhiều góc độ.
+
+Ngoài ra, với tần số quét 144Hz sẽ giúp cho mọi chuyển động của nhân vật trong game được mượt mà nhất để game thủ có thể bắt trọn mọi khoảnh khắc của cuộc chơi, thậm chí là chống xé hình khi chơi những tựa game tốc độ nhanh như FPS hay FIFA online… 	</p>
+						
+						<h2>Hệ thống tản nhiệt của TUF A15 Ryzen 7 5800H mát mẻ, thoải mái chiến game trong thời gian dài</h2>
+				        <img style="width:90% ;" src="https://laptop88.vn/media/product/6818_dell_alienware_m15_r6_70262923_i7_11800h_2_93c16dcc6e0447c5bb205f8abbd61d12_grande.png">
+				        <p>Không chỉ được trang bị hệ thống tản nhiệt với 2 quạt tản lớn, 4 ống dẫn nhiệt và 3 ống tản nhiệt cùng nhiều lỗ thông khí lớn ở phần đáy và hông máy mà Asus TUF TUF A15 Ryzen 7 5800H FA506QM-HN016T còn có hệ thống tự làm sạch làm mát 2.0 đảm bảo rằng hệ thống làm mát của bạn không có cặn bẩn để có đầy đủ chức năng trong suốt thời gian dài, vì vậy máy luôn giữ được nhiệt độ ổn định trong quá trình chơi game và giữ cho tuổi thọ của các linh kiện bên trong được lâu dài nhất.</p>
+  	
+				        	⪢⪢ Mời các bạn tham khảo thêm sản phẩm tượng tự:<a href=""> Dell Inspiron 3510</a> - Laptop MỚI 100% có thiết kế bền bỉ, sang trọng, màn lớn 15.6 inch viền siêu mỏng rộng rãi, chip đời mới làm việc mượt mà ổn định, ổ cứng SSD tốc độ cao, GIÁ RẺ NHẤT TT CHỈ 10 TRIỆU.</p>
+
+				        <a href="#" class="button">liên hệ ngay với<br> nhân viên tư vấn </a> 
+				        <br>
+				        <br>
+				        <div class="form-group" style="padding-bottom: 5%;">
+							  <label for="comment">Comment:</label>
+							  <textarea class="form-control" rows="4" id="comment"></textarea>
+							  <button style="margin-left:90%;margin-top:1%;">Đăng</button>
+						</div>
+
+					</div>
+			</div>
+		</div>
+	
+		<div class=" col-lg-3 right">
+			<div class="row">
+				<div class="container">
+					<div class="thongtin3">
+						<h3>Thông số kỹ thuật</h3>
+						<div class="row">
+							<div class="left col-lg-5">
+								CPU
+							</div>
+							<div class="right col-lg-7">
+								AMD Ryzen 7 5800H 3.2GHz up to 4.4GHz 16MB
+							</div>
+						</div>
+						<div class="row">
+							<div class="left col-lg-5">
+								RAM
+							</div>
+							<div class="right col-lg-7">									16GB (8GBx2) DDR4 3200MHz (2x SO-DIMM socket, up to 32GB SDRAM)
+							</div>
+						</div>
+						<div class="row">
+							<div class="left col-lg-5">
+								VGA
+							</div>
+							<div class="right col-lg-7">
+								NVIDIA GeForce RTX 3060 6GB GDDR6, Boost Clock 1425 / 1702MHz, TGP 130W
+							</div>
+						</div>
+						<div class="row">
+							<div class="left col-lg-5">
+								Ổ cứng
+							</div>
+							<div class="right col-lg-7">
+								512GB SSD M.2 2280 PCIe 3.0x4 NVMe
+							</div>
+						</div>
+						<div class="row">
+							<div class="left col-lg-5">
+								Trọng lượng
+							</div>
+							<div class="right col-lg-7">
+								2.45 kg
+							</div>
+						</div>
+						<div class="row">
+							<div class="left col-lg-5">
+								Card Reader
+							</div>
+							<div class="right col-lg-7">
+								SD-card (supports SD/ SDHC/ SDXC)
+							</div>
+						</div>
+						<div class="row">
+							<div class="left col-lg-5">
+								Màn hình
+							</div>
+							<div class="right col-lg-7">
+								14 inch HD
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="container">
+					<div class="thongtin4">
+						<h3>Sản phẩm hot!!!</h3>
+						<div class="tc1 row" style="width: 100%" >
+							<img style="width:100% ;" src="https://laptop88.vn/media/product/pro_poster_6533.jpg">
+							<ul>
+								<li>[Mới 100% Full box] Laptop Asus Vivobook A15 A515EA<br><a href="">15.290.000Đ
+								</a><br><p>Laptop Asus thời trang giá rẻ ,<br>
+								Chip Intel đời 11, Màn hình 15.6" FHD</p>
+							</li>
+							</ul>
+						</div>
+						<div class="tc1 row ">
+							<img style="width:100% ;" src="https://laptop88.vn/media/product/pro_poster_6746.jpg">
+							<ul>
+								<li>[Mới 100% Full box] Laptop Asus Vivobook A15 A515EA<br><a href="">15.290.000Đ
+								</a><br><p>Laptop Asus thời trang giá rẻ ,<br>
+								Chip Intel đời 11, Màn hình 15.6" FHD</p>
+							</li>
+							</ul>
+						</div>
+						<div class="tc1 row ">
+							<img style="width:100% ;" src="https://laptop88.vn/media/product/pro_poster_6610.jpg">
+							<ul>
+								<li>[Mới 100% Full box] Laptop Asus Vivobook A15 A515EA<br><a href="">15.290.000Đ
+								</a><br><p>Laptop Asus thời trang giá rẻ ,<br>
+								Chip Intel đời 11, Màn hình 15.6" FHD</p>
+							</li>
+							</ul>
+						</div>
+						<div class="tc1 row ">
+							<img style="width:100% ;" src="https://laptop88.vn/media/product/6790_hp_240_g8_519a8pa_1.jpg">
+							<ul>
+								<li>[Mới 100% Full box] Laptop Asus Vivobook A15 A515EA<br><a href="">15.290.000Đ
+								</a><br><p>Laptop Asus thời trang giá rẻ ,<br>
+								Chip Intel đời 11, Màn hình 15.6" FHD</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	
+			
+</div>
+
+<div class="container-fluid">
+	<form action="#">
+    <input type="submit" value="⇮" />
+</form>
+</div>	
+		
+
+
+	
+</body>
+</html>
