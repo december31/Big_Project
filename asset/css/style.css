@@ -429,7 +429,7 @@ main::after {
 
 .accessory {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: space-around;
 	/* margin: 0 -6px; */
 }
@@ -437,6 +437,7 @@ main::after {
 .accessory-section {
 	background-color: #fff;	
 	padding: 10px;
+	align-self:stretch;
 }
 
 .img-acc-container {
