@@ -477,6 +477,36 @@ main::after {
 	font-weight: 600;
 }
 
+@keyframes goUp {
+	from {
+		bottom: -50px;
+	}
+	to {
+		bottom: 100px;
+	}
+}
+
+@keyframes goDown {
+	from {
+		bottom: 100px;
+	}
+	to {
+		bottom: -50px;
+	}
+}
+
+#go-up {
+	font-size: 30px;
+	position: fixed;
+	bottom: -50px;
+	right: 5vw;
+	color: #000;
+	background-color: aquamarine;
+	padding: 10px;
+	border-radius: 50%;
+	box-shadow: 0 0 4px #333;
+}
+
 
 @media screen and (max-width: 1023px) {
 	.product-left-section {

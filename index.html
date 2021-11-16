@@ -30,6 +30,11 @@
 	<link rel="stylesheet" href="./asset/css/menu.css">
 </head>
 <style >
+
+	html {
+		scroll-behavior: smooth;
+	}
+
 	footer .container{
 	    width: 100% !important;
 	    min-width: 1210px !important;
@@ -270,10 +275,6 @@
 			</div>
 		</div>
 	</div>
-
-
-
-
 
 	<div class="main">
 		<!-- slider -->
@@ -1241,7 +1242,27 @@ Phiên bản 2019 với LED RGB 16.8 triệu màu</span>
 		<div class="clear"></div>
 		<!-- end content -->
 	</div>
-</div>
 
+	<a href="#">
+		<i id="go-up" class="fas fa-arrow-up"></i>
+	</a>
+
+	<script type="text/javascript" >
+		var goUp = document.getElementById('go-up')
+		window.addEventListener('scroll', function() {
+			var x = pageYOffset;
+			if(x > 700) {
+				goUp.style.bottom = '100px'
+				goUp.style.animation = 'goUp ease-in-out 300ms'
+				console.log(1);
+			}
+			else {
+				goUp.style.bottom = '-50px'
+				goUp.style.animation = 'goDown ease-in-out 300ms'
+			}
+		})
+
+	</script>
+	
 </body>
 </html>

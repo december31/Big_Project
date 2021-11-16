@@ -165,7 +165,7 @@ function displayPasswordAccept() {
 }
 
 function testConfirmPassword() {
-	if(password.value.length > 0 && confirm_password.value.length >= 8) {
+	if(password.value.length > 0 && confirm_password.value.length > 0) {
 		if(password.value !== confirm_password.value) {
 			// show error
 			confirm_password_error.classList.add('show')
