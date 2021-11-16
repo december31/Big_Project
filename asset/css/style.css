@@ -501,10 +501,10 @@ main::after {
 	bottom: -50px;
 	right: 5vw;
 	color: #000;
-	background-color: aquamarine;
+	background-color: #ccc;
 	padding: 10px;
 	border-radius: 50%;
-	box-shadow: 0 0 4px #333;
+	box-shadow: 0 0 4px #444;
 }
 
 
